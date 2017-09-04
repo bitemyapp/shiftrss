@@ -1,0 +1,1302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title>bitemyapp</title>
+    <link href="http://bitemyapp.com//atom.xml" rel="self" />
+    <link href="http://bitemyapp.com/" />
+    <id>http://bitemyapp.com//atom.xml</id>
+    <author>
+        <name>Chris Allen</name>
+        <email>cma@bitemyapp.com</email>
+    </author>
+    <updated>2017-05-03T00:00:00Z</updated>
+    <entry>
+    <title>What a Haskell Study Group is Not</title>
+    <link href="http://bitemyapp.com//posts/2017-05-03-what-a-haskell-study-group-is-not.html" />
+    <id>http://bitemyapp.com//posts/2017-05-03-what-a-haskell-study-group-is-not.html</id>
+    <published>2017-05-03T00:00:00Z</published>
+    <updated>2017-05-03T00:00:00Z</updated>
+    <summary type="html"><![CDATA[<div class="info">
+    
+</div>
+
+<div class="post">
+<p>This article is by <a href="https://twitter.com/sjsyrek">Steven Syrek</a>. I’m reposting it here because I endorse what he’s saying. I believe Steven brings a valuable perspective on the <a href="http://haskellbook.com">haskell book</a>, reading groups, and education in general.</p>
+<p>Steven posted <a href="https://medium.com/@sjsyrek/what-a-haskell-study-group-is-not-470f4aeb9673">this article on his Medium</a>.</p>
+<p>He has also written some <a href="https://medium.com/@sjsyrek/some-notes-on-haskell-pedagogy-de43281b1a5c">extended notes on pedagogy tied to this post here</a>.</p>
+<!--more-->
+<hr>
+<p>The most rewarding thing about learning Haskell is the feeling that you are making real progress toward understanding not just the syntax of a programming language but a way of solving problems that is more universal than the domain of software development. The most rewarding thing about teaching Haskell is watching others make this same progress. The most frustrating thing about both learning and teaching Haskell is the widespread attitude that functional programming in general, or Haskell specifically, is difficult.</p>
+<p>The goal of any teacher should be to expel this myth. The Haskell community is too small to support much formal education and those most apt to teach have precious little time to do so. And so the myth persists, and many people who could or would learn Haskell do not, whether out of fear, misprision, or lack of communal encouragement. Independent study groups, however, can meet the needs of language learners just as well, but only if they are committed at the outset to pragmatic goals and maintain a culture of mutual support and accountability.</p>
+<p>Over the course of about eight months, from September 2016 to April 2017, I ran a Haskell study group in New York City based on Chris Allen and Julie Moronuki’s book, <a href="http://haskellbook.com/"><em>Haskell Programming from First Principles</em></a>. Since this book was designed to provide a curriculum, it was ideally suited to our purposes. We covered one chapter a week, more or less, as there is just enough content per chapter to keep a dedicated group humming along: challenged but not overwhelmed.</p>
+<p>In this article, I will share my thoughts on what made our group successful, where we went astray, and in particular on what a Haskell study group <em>should not</em> be—as the pitfalls are many but advice for avoiding them, based on actual experience, scant. My own background happens to be in education, which has no doubt informed my observations, but I was just as much a student in this study group, even if I happened to be its organizer. I hope this dual role has given me insight from both sides of the pedagogical divide that will be useful to others thinking about starting their own Haskell study groups, a course of action I highly recommend.</p>
+<h4 id="a-haskell-study-group-is-not-meant-to-serve-any-purpose-other-than-helping-people-learn-haskell.">1. A Haskell study group is not meant to serve any purpose other than helping people learn Haskell.</h4>
+<p>Keep this mantra in mind: the point of a Haskell study group is to help people learn Haskell. Nothing else matters. Refer to this mantra whenever you’re in doubt about anything else.</p>
+<h4 id="a-haskell-study-group-is-not-a-place-for-people-to-learn-about-monads.">2. A Haskell study group is not a place for people to learn about <a href="https://wiki.haskell.org/What_a_Monad_is_not">monads</a>.</h4>
+<p>Or any other specific language feature. Do not let the random people who will inevitably show up derail your meetings with general, off-topic questions. Make a schedule, post it publicly, and stick to it. Once you embark on diversions, you may never get back on track. Respect the time, commitment, and ongoing progress of your regulars and let newcomers catch up on their own. Always assume anyone who comes to a meeting has: 1) read the chapter for that week, 2) typed in all the code in the chapter and, separately, 3) attempted to complete all the exercises in the chapter. Avoid spending too much time on topics everyone should already know or any time at all on questions about the language from Meetup shoppers.</p>
+<h4 id="a-haskell-study-group-should-not-reinforce-mistaken-or-unhelpful-stereotypes-about-haskell.">3. A Haskell study group should not reinforce mistaken or unhelpful stereotypes about Haskell.</h4>
+<p>Many people have had a hard time learning Haskell. This has given the language a reputation for being hard to learn. In reality, Haskell is elegant and far easier to learn than many other, less elegant languages. The dearth of teaching materials and low quality of documentation have made it difficult for entrants to gain a foothold in the community as compared to language communities that go out of their way to be approachable to newcomers. The Haskell Book directly addresses this problem, however, and it does no one any good to credit assumptions that Haskell requires you to be a math genius. Haskell is capable of representing extremely abstract mathematical entities, but so is math itself, and you hardly need to understand linear algebra to balance your checkbook. I’ve been a college writing instructor for over a decade. Writing is hard. Teaching writing is hard. But anyone can become a proficient writer, even if few will ever write literary masterpieces. We can respect the challenge without succumbing to it or using it as an excuse. Practice, and you’ll improve. Complain, and you’ll remain mediocre. Focus on the positives and the cumulative effect of breakthroughs in the Haskell learning experience.</p>
+<h4 id="a-haskell-study-group-is-not-a-language-advocacy-committee.">4. A Haskell study group is not a language advocacy committee.</h4>
+<p>Given Haskell’s rather esoteric reputation in the world of professional developers, you are likely to be issued demands to defend Haskell’s general usefulness, the practical utility of certain concepts, or the viability of functional programming as a whole. Don’t do it. People have Google if they want to research such things and the entire rest of the Internet if they want to bring their <a href="https://www.youtube.com/watch?v=mcE0aAhbVFc">spoons to a knife fight</a>. Your group exists to teach <em>people</em> how to code, not to teach <em>developers</em> how to do their jobs. Focus on the people. Ignore the trolls, don’t use facile comparisons to OOP to explain anything, and don’t waste your energy trying to convince the skeptical. Actually, examples of what you can do in Haskell won’t necessarily help your cause, because most programming languages can do anything any other language can do. The power of Haskell isn’t in any one abstraction. It’s in leveraging all of them together to build software, and software is complex, composed of many interlocking parts. You aren’t likely to persuade by showing someone “the amazing things you can do with Functor” or what have you. Ultimately, they will have to find out for themselves.</p>
+<h4 id="a-haskell-study-group-is-not-an-experiment-in-deliberative-democracy.">5. A Haskell study group is not an experiment in deliberative democracy.</h4>
+<p>A successful study group requires leadership. Leadership means that someone has to be in charge. Someone has to find space for the meetings, plan them, show up to all of them on time, be responsible for any contingencies that arise, and enforce norms of behavior. If there is no point person, it is unlikely that the group as a whole will make much progress. Sometimes, leaders emerge organically, but it’s better for someone to volunteer to be the organizer in advance. Natural leaders can serve a useful purpose, but they can also be destructive if they aren’t reliable, grow resentful at having assumed a role they didn’t sign up for, or turn your study group into a cult of personality instead of a collaborative learning environment. It’s also essential for the organizer to have buy-in from the rest of the group. On the one hand, participants should appreciate the amount of work it takes to put a study group together and keep it together. On the other hand, an effective leader makes decisions without turning every possible choice into a referendum. Democracy is a fine thing, but in this situation, it is more likely to result in anarchy and listlessness than efficient and decisive action. Respect for the organizer(s) is also relevant to the next point:</p>
+<h4 id="a-haskell-study-group-should-not-turn-anyone-into-a-martyr.">6. A Haskell study group should not turn anyone into a martyr.</h4>
+<p>Whoever is running your group, it’s a good idea if the person in charge is a fellow learner. Someone already proficient in Haskell will need to be especially motivated to teach others to stick with a study group for beginners. Another beginner, however, will have intrinsic motivation. In fact, the organizer will have an even stronger incentive to keep up with the work. Beware any situation in which a single person has assumed all of the responsibility but has little incentive to continue participating or is otherwise crushed by the demands of a dysfunctional group culture—it’s not sustainable.</p>
+<h4 id="a-haskell-study-group-is-not-a-traditional-classroom.">7. A Haskell study group is not a traditional classroom.</h4>
+<p>While it is advantageous for the organizer to have prior teaching experience, it is not essential. Since such experience is in short supply, most groups will have to go with what and whom they have. That means the culture of the group is even more important, because people who don’t know how to teach should probably not try to do it. Go over exercises, break into pairs or smaller groups if necessary, but avoid devoting too much of any given meeting to lectures or presentations. Talking is no substitute for coding.</p>
+<h4 id="a-haskell-study-group-is-not-a-hackathon.">8. A Haskell study group is not a hackathon.</h4>
+<p>That is, it shouldn’t be a freeform, come-and-do-as-you-please affair. Adhere to a long term curriculum, keep individual meetings structured, and enforce norms of accountability. People who drift in and out or consistently show up unprepared are only going to drain energy from the room. Shower those who participate in good faith with praise and attention. Marginalize those who only come for Haskell social hour or for the free food and drinks. Speaking of which:</p>
+<h4 id="a-haskell-study-group-is-not-a-meetup.">9. A Haskell study group is not a Meetup.</h4>
+<p>Go ahead and use Meetup to schedule your meetings. I did. But don’t give people the impression that it’s one of those Meetups where you can show up to eat pizza, drink beer, and contribute nothing. Likewise:</p>
+<h4 id="a-haskell-study-group-is-not-a-tech-talk.">10. A Haskell study group is not a tech talk.</h4>
+<p>Your study group is not a form of entertainment. Don’t just give talks or show slides. Some of that may be an inducement to attend, but you want students, not audience members. Your best bet is to plug in to a projector, display the REPL side-by-side with the PDF of the book, and code. You can do pairing, mobbing, taking turns on the exercises, or whatever other method you desire as long as you’re coding and everyone else has the chance to code right along with you. Live coding can be scary, so make it an exercise in solidarity. If everyone did their homework, then everyone should have something to contribute. I suggest you ask them to close their computers and have them do the exercises again, on the spot, for reinforcement. You’ll probably find that everyone ends up loving that in spite of themselves. And failures along the way are fine. In fact, the type checker invites “failure-driven development.” Work things out together. Learn to love the REPL together. Encourage hands-on work, and figure out as a group how to leverage error messages to produce provably correct code.</p>
+<h4 id="haskell-study-group-meetings-should-not-go-on-forever.">11. Haskell study group meetings should not go on forever.</h4>
+<p>People are busy. If you get anyone to dedicate an hour a week to attending a Haskell meeting, it’s a miracle. Don’t ask for too much, or you’re just going to discourage people who would otherwise like to come. As with learning anything, most of the work of learning Haskell people have to do on their own. The study group can provide motivation and moral support (and asynchronous assistance if you use Slack or something similar), but the meetings themselves shouldn’t be longer than an hour or two. Use them to catch up, go over as many of the exercises as possible, and answer questions relevant to that week’s chapter assignment. The book provides a curriculum, and it’s best to just follow it. There is no need to diverge into advanced language features or demonstrate practical applications of every concept. Keep it short, and keep it simple. Also, you don’t have to make sure everyone completely understands everything. Give people time to figure things out, and help them do so however you can, but if it takes too long, move on. You can always work with people one-on-one if they get stuck somewhere.</p>
+<h4 id="haskell-study-groups-themselves-should-not-go-on-forever.">12. Haskell study groups themselves should not go on forever.</h4>
+<p>Choose a realistic goal for your study group. Covering chapters 1 to 18 is a realistic goal, at least to start. That will get you through monads (the denouement for many students), at which point you can decide how to proceed with the more advanced material. Some will have had enough, while others will be ready to learn independently. At any rate, don’t give people the impression that they’ll be visiting your co-working cubicle farm every week for the rest of their lives.</p>
+<h4 id="a-haskell-study-group-is-not-group-therapy.">13. A Haskell study group is not group therapy.</h4>
+<p>Remember the point of a Haskell study group? It isn’t to make people feel good about themselves or give them a place to go at night. It’s to teach people Haskell. You don’t need to be an intimidating jerk, but you aren’t doing anyone who attends any favors by not prodding them at least a little bit. If group members come prepared, they should be able to participate in group discussion of the exercises. You can organize smaller groups if some members are truly shrinking violets, but I don’t recommend letting people off the hook just because they’re reluctant to speak up. Create a supportive environment, and there’s no reason for anyone to be terrified of contributing. You never know when an otherwise shy person may be withholding a valuable insight just for being reluctant to be the center of attention. Moreover, you may never know when one such person’s confusion about a concept is shared by others, just because no one wants to admit it. Seek out opportunities for productive conversations. Don’t let people be dominating or rude, but also don’t let them be window dressing. Both attitudes are often just forms of pride, and you need to break through that to reach the vulnerable, yearning students within. Likewise, don’t be afraid to ask people to leave if their attitude or behavior is causing problems or their lack of preparedness makes their ongoing participation pointless and a negative example for others.</p>
+<h4 id="a-haskell-study-group-is-not-a-race.">14. A Haskell study group is not a race.</h4>
+<p>Do not skip material in the book, and do not try to cover too much at once. A chapter a week, more or less, should be the pace you adopt. Any faster is overwhelming. Any slower is boring and ineffective. Some chapters are long enough to warrant coverage over multiple weeks, but that should be a rarity. And precious few chapters (certainly not chapter 1) are skippable. Set a reasonable pace, and trust the curriculum. Don’t feel the need to move quickly or to slow down, even if some people ask for it. I repeat, most of the work they do, they should do at home. The meetings are for review, as much as you can reasonably do, and not to serve the needs of any one student. Also, don’t skip the chapter on QuickCheck, and don’t let anyone skip writing all those <code>quickBatch</code> tests. We know who you are.</p>
+<h4 id="a-haskell-study-group-is-not-a-competition.">15. A Haskell study group is not a competition.</h4>
+<p>Programmers often have strong, competitive personalities. Do your best to contain that. Even better, turn it to useful ends: make the game about helping others, not being smarter or further along in the book. Encourage more experienced students to help less experienced students, in pairs if necessary, so the value of collective progress is enhanced and “being in charge, because I’m the best” diminished. That said, a competitive spirit can be motivating as long as it isn’t toxic. Whatever keeps people showing up without discouraging others—it’s often a fine balance.</p>
+<h4 id="a-haskell-study-group-should-not-encourage-or-facilitate-cheating.">16. A Haskell study group should not encourage or facilitate cheating.</h4>
+<p>Implore group members to at least try the exercises for themselves and avoid looking for solutions online. Insist that they do not post solutions publicly themselves. On a related note, make sure they buy the book. The authors worked hard on it, of course, but most people will value something more highly if they have paid for it. You’ll want your group to have that feeling of “buy-in” however you can get it.</p>
+<h4 id="a-haskell-study-group-should-not-let-its-culture-develop-spontaneously.">17. A Haskell study group should not let its culture develop spontaneously.</h4>
+<p>The culture of any group of people has at least as much to do with how that group behaves and what it considers acceptable, en masse, than its laws. And culture has inertia. If the culture of your study group is misaligned with the goal of learning Haskell, you will have a hard time changing it. Therefore, establish and reinforce your group’s culture from the outset. Be serious about the responsibilities of its members and that it’s not OK to show up unprepared. Think about creating the proper incentives for productive behavior, and avoid giving in to a culture of impunity. Over time, as the group becomes habituated to doing things the right way, you won’t need to be an enforcer as much. On the other hand, a culture that has gone astray will not easily be corrected with new rules, because by that point, leadership will no longer have the credibility to overrule custom: <em>consuetudo pro lege servatur</em>.</p>
+<h4 id="a-haskell-study-group-does-not-need-anything-other-than-haskell-in-order-to-teach-people-haskell.">18. A Haskell study group does not need anything other than Haskell in order to teach people Haskell.</h4>
+<p>Use the tools provided by the language to teach the language: the REPL, the type checker, handy compiler extensions such as <code>InstanceSigs</code>, etc. Empower students to use these tools to develop an intuition for the type system and how to use it to solve problems. You don’t need to explain anything in terms of JavaScript, and be careful about overusing metaphors, too. Comparing Haskell to other languages and making abstract concepts more concrete feel like easy wins, but don’t do either as a substitute for teaching and learning the language on its own terms.</p>
+<h4 id="a-haskell-study-group-is-not-for-people-who-cant-handle-discipline-and-hard-work.">19. A Haskell study group is not for people who can’t handle discipline and hard work.</h4>
+<p>The Haskell Book is nothing if not demanding. But the intensity of the curriculum is meant to guide students to develop an intuition for how the type system works and the ability to interpret the terse but expressive syntax of Haskell code as quickly as possible. It helps you build up a repertoire of fundamental concepts and techniques that lead to ever more complex, but still comprehensible, abstractions down the road. There are no shortcuts here. Diligent learners will rapidly establish for themselves that foundation of understanding, and it will help them move more easily, and with a greater sense of achievement, as more advanced concepts are introduced. Conversely, the less studious are unlikely to overcome the psychological barriers that make people think Haskell is difficult. They will grow frustrated and give up as their more enthusiastic peers come to seem like magicians when working with the REPL. The truth is just the difference in commitment.</p>
+<h4 id="a-haskell-study-group-is-not-only-about-discipline-and-hard-work.">20. A Haskell study group is not only about discipline and hard work.</h4>
+<p>After your meetings, go out with the group to a local bar or cafe. Pick a regular place so it becomes a tradition. Not only is it good for community cohesion, which is good for the continuation of your study group, but it gives people a venue for venting their natural desire to socialize—a venue that is not the meeting place itself. You’re likely going to end up with a core group of people who always come. Cultivate them. Cherish them. Protect their interests. Get the less committed to want to be a part of the in-crowd, and welcome them with open arms when they prove themselves worthy.</p>
+</div>
+
+<div class="blurb">
+  <p>
+      I know this site is a bit of a disaster zone, but if you like my writing or think you could learn something useful from me, please <a href="http://haskellbook.com/">take a look at the Haskell book</a> I've been writing. There's a free sample available too!
+  </p>
+</div>
+
+<div class="footer">
+  <p>
+    Posted on May  3, 2017
+  </p>
+</div>
+]]></summary>
+</entry>
+<entry>
+    <title>A review of Learn Python the Hard Way, 3rd ed</title>
+    <link href="http://bitemyapp.com//posts/2017-03-25-review-learn-python-hard-way.html" />
+    <id>http://bitemyapp.com//posts/2017-03-25-review-learn-python-hard-way.html</id>
+    <published>2017-03-25T00:00:00Z</published>
+    <updated>2017-03-25T00:00:00Z</updated>
+    <summary type="html"><![CDATA[<div class="info">
+    
+</div>
+
+<div class="post">
+<p>As a break from usual, I thought I would review Zed Shaw’s Learn Python the Hard Way. I’ve had several beginners to programming ask me what they should use to learn and Shaw’s book frequently comes up. I’ve looked over his materials before when they were a free website but I wanted to see what the current published version was like.</p>
+<!--more-->
+<h2 id="a-note-from-the-reviewer">A note from the reviewer</h2>
+<p>This review will be self-indulgent. I make copious comparisons with <em>Haskell Programming from First Principles</em>.</p>
+<p>I write about and primarily use Haskell in my work now. I used Python for about 7 years of my 10 year career so I am comfortable with Python-the-language even if I don’t keep up with the community any longer.</p>
+<p>My final conclusions and recommendation are at the bottom of this review!</p>
+<h1 id="comparing-the-physical-version-of-learn-python-the-hard-way-with-the-ebook">Comparing the physical version of Learn Python the Hard Way with the ebook</h1>
+<h3 id="skip-this-section-if-you-only-want-to-hear-about-the-content.">Skip this section if you only want to hear about the content.</h3>
+<p><img src="/images/lpthw_digi.jpg" alt="Learn Python the Hard Way's cover" style="width: 540px;"/></p>
+<p>I bought the physical version from Amazon and the ebook from Zed Shaw directly. Below you’ll see a picture of the physical copy I got.</p>
+<p><img src="/images/lpthw_phys.jpg" alt="Learn Python the Hard Way physical book binding" style="width: 540px;"/></p>
+<p>The margins in the layout are good enough. The main problem with the paper version is that it is a paperback with a typical perfect-bound binding. As a result, the book cannot stay open even on the 88th page depicted in the photo above. Page 88 of the print book was not at all the same content as the ebook. Page 88 in the print book was halfway through Exercise 25, titled “Even More Practice.” Page 88 in the ebook was in Exercise 17, titled “More Files.” Exercise 25 in the book was located at page 114. The ebook appears to use a slightly less compact layout than the print book, so the page difference will not necessarily be a fixed constant.</p>
+<p>The content itself seemed identical, but there were some formatting differences. Here’s an example using the common student questions from Exercise 25:</p>
+<p><img src="/images/lpthw_phys_fmt.jpg" alt="Learn Python the Hard Way physical formatting" style="width: 540px;"/></p>
+<p>In the physical version, typewriter text is monospaced, bold, and slightly larger than the bolded text surrounding it.</p>
+<p><img src="/images/lpthw_digi_fmt.png" alt="Learn Python the Hard Way ebook formatting" style="width: 540px;"/> <img src="/images/lpthw_digi_fmt2.png" alt="Learn Python the Hard Way ebook formatting" style="width: 540px;"/></p>
+<p>In the digital version, it’s monospaced but seemingly not bold. It’s also the same size as the surrounding text. The result is that the typewriter text is more visually apparent in the ebook version.</p>
+<h2 id="table-of-contents">Table of contents</h2>
+<p><img src="/images/lpthw_phys_toc.jpg" alt="Learn Python the Hard Way ebook table of contents" style="width: 540px;"/></p>
+<p>The physical version’s table of contents is conventional and clear with a clean layout. The structuring in terms of chapter/exercise, section, and then sub-section makes more sense than what I’ve seen in some tech books. Often in Manning books you’ll see “units” encompassing multiple chapters that serve no useful purpose. The physical version of LPTHW transitions to backmatter after the 52nd exercise and some comments on learning.</p>
+<p><img src="/images/lpthw_digi_toc.png" alt="Learn Python the Hard Way ebook table of contents" style="width: 540px;"/></p>
+<p>Unfortunately, the formatting of the table of contents is broken in the ebook version. There are 15 exercises in the appendix of the physical version, enumerated as 1 through 15. The ebook version counts up to 55.17 for the command-line content. The ebook stops abruptly at 55.17 and there’s nothing after that. The physical version includes an index at the end which the ebook does not have. I think this is because Zed’s indexing was done manually by humans but not incorporated into the source text he renders the ebook from. For <a href="http://haskellbook.com">the Haskell Book</a> Julie and I have always indexed things in the original LaTeX source. As a result, the eventual print version of Haskell Programming from First Principles should have the same index as the final version of the ebook.</p>
+<h1 id="content-review-starts-here">Content review starts here</h1>
+<h2 id="preface">Preface</h2>
+<p>Zed is right here about learning to code and the importance of instruction. I haven’t said much about it publicly before this, but his work on Learn Python the Hard Way heavily influenced my earliest approaches to pedagogy and how I thought about the Haskell Book. Much changed as Julie and I learned more about what worked with reviewers, but the basic principle of guiding learners through cumulative exercises is extremely important.</p>
+<h2 id="the-hard-way-is-easier">The Hard Way Is Easier</h2>
+<p>Zed starts by explaining and justifying the process of learning code by typing code in, making it work, and learning to pay attention to detail. It’s a minimalistic approach to teaching a <em>programming language</em>, but for learning to code it would be difficult for me to improve on this. The Haskell Book took a lot more pages (over 1,000 to LPTHW’s ~300) because we were trying to convey concepts that would have lasting value in addition to teaching people to code in Haskell. Readers should take this section seriously and strive to follow Zed’s directions here.</p>
+<h2 id="the-setup">The Setup</h2>
+<p>Zed goes into more excruciating detail on getting things setup than even most books written for children. That’s not say it’s necessarily easy, but he’s working harder to smooth the way than most. In older versions of the book Zed would recommend <code>gedit</code>. In the print version he recommends TextWrangler for Mac users, Notepad++ for Windows users. The ebook recommends <a href="https://atom.io">Atom</a> for users of all operating systems which I think is sound advice even if I am an inveterate Emacs user.</p>
+<p>For a sense of how much detail Zed goes into, he tells you multiple possible names for your terminal program, to add it to your dock, run it, and not to expect it to look like much.</p>
+<p>This section is followed by how to find answers on the internet using Google, which most working programmers understand to be 80% of what they’re paid for. He even includes a screenshot of his example search and the results.</p>
+<h2 id="warnings-for-beginners">Warnings for Beginners</h2>
+<p>Zed warns against some common but faulty programmer advice. I largely agree with him but I think his reasons for doing this bear some explaining.</p>
+<blockquote>
+<p>If a programmer tells you to use vim or emacs, just say ”no.” These editors are for when you are a better programmer.</p>
+</blockquote>
+<p>Practice some charity and ignore the, “for when you are a better programmer” bit. There are two important reasons to take this and the rest of his advice seriously.</p>
+<ol style="list-style-type: decimal">
+<li><p>You cannot conquer all things at once. My coauthor Julie essentially learned Linux, the terminal, Git, LaTeX, and Haskell all at once when she first joined me on Haskell Book. I do <em>not</em> recommend doing this. Load-balancing your stress levels is important when you are a beginner.</p></li>
+<li><p>Programmers are more frequently pathologically impulsive and self-centered than I have seen in any other profession. They are not thinking of <em>your</em> needs as a beginner if they tell you to learn Python 3 instead of Python 2. They’re just cheering for red team vs. blue team or whatever other interest they might have. This is not to say I think Zed’s necessarily right to teach Python 3 instead of 2. (I don’t care) My point is that ignoring what programmers tell you is often sound advice.</p></li>
+</ol>
+<h2 id="exercise-1-a-good-first-program">Exercise 1, A Good First Program</h2>
+<p>I do not plan to review every exercise. I’d like to go to bed at a reasonable hour tonight and I plan to allot myself only one evening to write this review. If only because I owe my dogs Papuchon and Jack some couch/TV time.</p>
+<p>This exercise opens with a warning not to skip the front matter and methodological commentary. I can tell he has paid some attention to how people use the book based on this.</p>
+<p>The first exercise code opens with a series of print statements. The lines are enumerated in the code block formatting of both versions of the book. The ebook has syntax highlighting, the print version does not. I can’t blame Zed for making the print version monochrome, I’ve priced what it costs to print a color version of the Haskell Book and it was horrifying.</p>
+<p>The ebook version only shows a single screenshot of the code in the Atom text editor. The print version shows (monochrome, natch) pictures of the code in TextWrangler on Mac OS X and Notepad++ on Windows.</p>
+<p>After the picture(s) of the code in a text editor, both versions of the book show you what running the program should print in a Mac or Windows terminal. These images seemed identical in both versions of the book. Main thing I noticed is that Zed needs to fix his terminal font and anti-aliasing, but I am petty and finicky about type.</p>
+<p>Anticipating a common typographical error in the code, Zed points out where the error might’ve happened and what the error would look like. He also anticipates and informs the reader on how to correct a potential problem with ASCII encodings.</p>
+<p>Exercise 1 is bookended by study drills and common questions asked by students. I was able to understand two of the three drills in Zed’s instructions. I’m not sure what Zed was asking for with the first study drill, which is a little worrying as beginners will be using this. I will assume it’s something obvious that I missed.</p>
+<p>The common student questions occur at the end of the exercises throughout the book. They are intended to catch failure modes. Zed’s approach here is more modular than the Haskell Book. I think this works because the individual exercises are brief and typically last a handful of pages. In HPFFP we treated it more like a linear stream of consciousness and address anticipated problems in media res.</p>
+<h2 id="exercise-2-5">Exercise 2-5</h2>
+<p>Zed goes over basic syntactic elements like comments as well as expanding what the learner can do semantically by covering basic arithmetic operations and variables. The progression here seems more focused on minimizing the novelty of what is introduced <em>syntactically</em> rather than in what is introduced <em>semantically</em>. This is an important pedagogical distinction in the approaches taken by Zed’s book and by ours. We ordered the book based on conceptual dependence and difficulty, not on syntactic elements. Syntax didn’t count for nothing, but we believed it was the less difficult category than semantics. Our experience bore this out but I don’t think this invalidates Zed’s method. To give you an idea of what I mean, here’s a snippet of progressions of the code samples:</p>
+<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"><span class="co"># Ex1</span>
+<span class="bu">print</span> <span class="st">&quot;Hello World!&quot;</span></code></pre></div>
+<p>Side note: In the ebook, the source code has unicode quotation marks. This means if the reader attempts to copy-pasta the code from the ebook, it’ll break. I’m not certain if it was intentional or if it’s like our case where we intentionally don’t fix things that would make copying and pasting easier. The potential problem with LPTHW here is that someone familiar with unicode might believe they’re actually meant to use the fancy quotes and get stuck. Zed doesn’t address it in his student questions section that I could find.</p>
+<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"><span class="bu">print</span> <span class="st">&quot;I could have code like this.&quot;</span> <span class="co"># and the comment after is ignored</span></code></pre></div>
+<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"><span class="co"># Ex3</span>
+<span class="bu">print</span> <span class="st">&quot;Hens&quot;</span>, <span class="dv">25</span> <span class="op">+</span> <span class="dv">30</span> <span class="op">/</span> <span class="dv">6</span></code></pre></div>
+<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"><span class="co"># Ex4</span>
+average_passengers_per_car <span class="op">=</span> passengers <span class="op">/</span> cars_driven
+
+<span class="bu">print</span> <span class="st">&quot;There are&quot;</span>, cars, <span class="st">&quot;cars available.&quot;</span></code></pre></div>
+<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"><span class="co"># Ex5</span>
+my_eyes <span class="op">=</span> ’Blue’
+my_hair <span class="op">=</span> ’Brown’
+
+<span class="bu">print</span> <span class="st">&quot;He’s got </span><span class="sc">%s</span><span class="st"> eyes and </span><span class="sc">%s</span><span class="st"> hair.&quot;</span> <span class="op">%</span> (my_eyes, my_hair)</code></pre></div>
+<p>This should illuminate somewhat how Zed is adding to the syntactic elements demonstrated in each example as the reader progresses. The common student questions continue to be a strong point of this book in the potential problems they address.</p>
+<h2 id="exercises-6-12">Exercises 6-12</h2>
+<p>I will get briefer here as Zed’s approach seems consistent and I mostly just want to touch on what the book covers.</p>
+<p>Zed covers printing in more detail, escape sequences, string concatenation, and requesting manual user (terminal) input.</p>
+<h2 id="exercises-13-17">Exercises 13-17</h2>
+<p>These exercises cover getting user input from the arguments passed to the <code>python</code> invocation at the command-line, combining this with input prompts and reading and writing text files. Getting the length of a string is demonstrated. The code written is still in a scripty top-level style.</p>
+<h2 id="exercise-18">Exercise 18</h2>
+<p>This is where defining functions begins. Zed doesn’t stage out increasing complexity of function definition. Instead, the first function the reader sees will be one that has a gather parameter like so:</p>
+<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"><span class="co"># the use of * with the args parameter is called a gather parameter</span>
+<span class="kw">def</span> print_two(<span class="op">*</span>args):
+    arg1, arg2 <span class="op">=</span> args
+    <span class="bu">print</span> ”arg1: <span class="op">%</span>r, arg2: <span class="op">%</span>r” <span class="op">%</span> (arg1, arg2)</code></pre></div>
+<p>I did a search through the ebook PDF with Skim and as far as I can tell Zed never mentions what this is called so that readers could learn more about what it is or what it does. Zed could’ve showed the user how you can define a parameter-less function that can be invoked multiple times to save on repetition, but chose not to. Odder still, the gather parameter example is subsumed by a simple two parameter function and the first is called out as useless in the context of the example.</p>
+<h2 id="exercises-19-23">Exercises 19-23</h2>
+<p>Zed begins by demonstrating the definition of variables along with passing them to functions as arguments. Exercise 18 only demonstrated passing string to functions as arguments. The usual carefulness with progression resumes here. This is followed by using files with functions, functions that return a result, a vocabulary overview, and an exercise in reading code.</p>
+<p>Exercise 23 seems careless. The exercise suggests reading whatever Python code you can find on Github, Bitbucket, or Gitorious. There’s no real attempt to point people towards things they could understand at that point in the book. I suspect most readers don’t get very far with this.</p>
+<h2 id="exercises-24-26">Exercises 24-26</h2>
+<p>This sub-sequence begins with practice in writing code from the book which synthesizes the elements you’ve seen so far. The study drills ask you to describe the elements of the code in a manner not dissimilar from the “parts of speech” you might’ve done in a language lesson. The <code>help</code> function in the REPL is touched upon.</p>
+<p>This sub-sequence ends with a quiz where the objective is to fix broken code. I think it would have been better had this exercise been littered throughout the book so that the readers would have more practice doing so. Approaching this decision charitably, it could be said the readers had enough mistakes of their own to fix, but we chose to have many more exercises in our book.</p>
+<h2 id="exercises-27-31">Exercises 27-31</h2>
+<p>Boolean logic, truth tables, boolean operators, expressions using boolean operators, and equality. This includes expressions like:</p>
+<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python">”test” <span class="op">==</span> ”test”
+”test” <span class="op">==</span> <span class="dv">1</span></code></pre></div>
+<p>Python isn’t typed so Zed doesn’t seem to comment upon and equality comparison of values unequal types.</p>
+<p>Followed by if-else statements and guarding blocks of code with if-statements. The progression is a cumulative synthesis like before.</p>
+<h2 id="exercises-32-34">Exercises 32-34</h2>
+<p>Loops and lists begin here and is the title of the 32nd exercise. Appending onto lists, while loops, and indexing into lists are also covered.</p>
+<h2 id="exercise-35">Exercise 35</h2>
+<p>This sub-sequence opens with branches within functions. What branch refers to here is the multiple “branches” of code which may or may not execute based on an if statement. The first example combines parameter-less functions, if-else statements, variables, user input, converting an integer from a string, printing, aborting the program, functions calling other functions, an infinite while loop, and having an initial function to kick off a script.</p>
+<p>The author doesn’t wrap the <code>start</code> function in the usual <code>if __name__ == &quot;__main__&quot;</code> pablum you see in most Python scripts. I suspect he’s bucking it on purpose since these programs are not intended to be imported by other Python programs.</p>
+<h2 id="exercises-36-38">Exercises 36-38</h2>
+<p>Debugging (the basic process, not a tool), a review of symbols and syntax, reading code, popping and appending to lists, getting the length of a list, splitting strings based on a character divider, and concatenating a list of lists are demonstrated.</p>
+<h2 id="exercise-39">Exercise 39</h2>
+<p>The construction and basic manipulation of Python dictionaries is demonstrated here. The style is imperative and evocative of how the code’s been written through the book so far. There has been no lurch into a functional style yet.</p>
+<h2 id="exercises-40-42">Exercises 40-42</h2>
+<p>Modules, classes, and objects begin here. Zed touches on Python being referred to as an object-oriented programming language. This is also where <code>import</code> is principally demonstrated.</p>
+<blockquote>
+<p>My problem is that Object-Oriented Program- ming (OOP) is just plain weird.</p>
+</blockquote>
+<p>The above quote demonstrates the effort Zed put in to explaining OOP.</p>
+<p>Treating modules like dictionaries, invoking functions within modules like methods, accessing top-level variables in a module like a property, and using classes in all these same ways are covered.</p>
+<p>Object oriented terms qua Python are briefly explained. Basic subtyping with a typical <code>Animal</code>/<code>Species</code> hierarchy is demonstrated.</p>
+<h2 id="exercises-43-44">Exercises 43-44</h2>
+<p>This sub-sequence opens with basic object-oriented analysis and design. This is where things get much wordier than they had been up to this point. The objective is to write a simple game engine. The wordiness wouldn’t be unusual in some other books, but there’s a lot of upfront conceptual mapping and the basic approach isn’t demonstrated or justified with any smaller examples. This would be less jarring if it occurred in almost any other book.</p>
+<p>Eventually Zed has the reader write a bunch of stubbed out classes and empty methods to plan out the API. A bit like…defining types. Anyway, they look like this:</p>
+<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"><span class="kw">class</span> Scene(<span class="bu">object</span>):
+    <span class="kw">def</span> enter(<span class="va">self</span>):
+        <span class="cf">pass</span>
+
+<span class="kw">class</span> Engine(<span class="bu">object</span>):
+    <span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>, scene_map):
+        <span class="cf">pass</span>
+    <span class="kw">def</span> play(<span class="va">self</span>):
+        <span class="cf">pass</span></code></pre></div>
+<p>There’s some commentary on top-down vs. bottom-up design. The mapped out API is correctly described as top-down. This is followed by a listing of all the code that fills in the empty methods and classes for the game engine project. The usual “what you should see” sections and study drills follow. The study drill suggests changing the game, asks you fix a bug he left in the code, asks you to explain a piece of code, adding cheat codes, adding a small combat system, and mentions that the game engine is an example a finite state machine. He suggests reading about finite state machines on the web even if it might not make sense. It’s a little amusing to see these small gestures tossed out when he made little to no effort to point readers to further resources or examples earlier in the book. I suspect this time was different because some of Zed Shaw’s open source work entailed extensive use of finite state machines and he has an affectation for them.</p>
+<p>Later, inheritance versus composition are covered. Composition here is simple methods-invoking-other-methods. He strongly recommends against using multiple inheritance. Nothing too objectionable here.</p>
+<h2 id="exercise-45">Exercise 45</h2>
+<p>The reader is asked to make their own game like the space game that was just demonstrated. There’s a lot of commentary on code style and syntactic elements. There’s no attempt at ameliorating the blank-slate problem for beginners making a project from scratch.</p>
+<h2 id="exercises-46-49">Exercises 46-49</h2>
+<p>Project structure, automated testing with assertions, <code>nosetests</code>, exceptions (<em>very</em> briefly), basic text processing with a lexicon, and basic parsing are covered.</p>
+<p>Note that the first time exceptions were called out by name was in the overview of symbols but he’s been using <code>try</code> off and on throughout the book.</p>
+<h2 id="exercises-50-51">Exercises 50-51</h2>
+<p>Making a basic web application with <code>web.py</code> (a locked version named <code>lpthw.web</code>), getting input from a web browser (HTML forms), HTML templates, and automated tests for forms are demonstrated. As you might imagine, the explanations of what makes a web app tick are briefly but my coauthor and I are no less guilty of this. It’s a huge topic.</p>
+<h2 id="exercise-52">Exercise 52</h2>
+<p>The task in this exercise is to refactor the game from exercise 43 into a web application. This covers the basics of refactoring code and web sessions. The reader is expected to do most of the work this time, including figuring out how to make user authentication work.</p>
+<p>This one seems like a leap based on how much handholding there had been in the book so far. I felt uncomfortable with the final project in our book because it expects the reader to learn TCP sockets on their own, but I think the lacuna was not so bad there.</p>
+<h2 id="zeds-commentary">Zed’s Commentary</h2>
+<p>The book includes two bits of commentary separating the 52nd exercise and the content that goes over the command line. One is called “Next Steps” has a couple subsections. The first subsection of “Next Steps” is an overview of how to go deeper with Python, particularly in specific domains like data analysis. I believe this is partly because Zed is trying to empower people whose principal “job” isn’t software itself but which might by augmented by knowing how to code. The second subsection is titled, “How to learn any programming language.” The advice he gives here is sound and I recommend following it if you are learning Haskell with our book or not.</p>
+<h2 id="appendix-a-command-line-crash-course">Appendix A: Command Line Crash Course</h2>
+<p>These are the exercises sectioned under “55”. This is the content I noted had a very different presentation in the table of contents of the print and ebook variants of LPTHW. The sequence introduces individual command line applications and builds on them iteratively. Examples are given for Linux/OS X and Windows in each exercise. Learning basic file and directory manipulation is the priority of this appendix.</p>
+<h2 id="a-note-on-python-2-vs.3">A note on Python 2 vs. 3</h2>
+<p>I’ve reviewed the third edition of this book which uses Python 2 throughout. The next, unreleased fourth edition of the book will be using Python 3. It shouldn’t be an impediment for a beginner to learn Python 2 using this book and then move on to using Python 3 afterward, but you should be aware of this.</p>
+<p>At present if you go to the purchase page for the ebook on Zed Shaw’s website, it’ll say</p>
+<blockquote>
+<p>Learn Python The Hard Way, 3rd/4th Edition For $29.99</p>
+</blockquote>
+<p>I <em>believe</em> this means purchasers of the ebook will get the eventual fourth edition when it is released even if they’re just buying the third for now. The downloads in my account for Learn Python the Hard Way included videos and the PDF for the third edition only. If you are uncertain and care a great deal about this, please ask Zed himself to confirm.</p>
+<h1 id="my-conclusions">My conclusions</h1>
+<p>I think this book is positively influenced by Zed’s background as a painter and musician. I believe he’s studied education as a domain as well and it shows in his work.</p>
+<p>Overall, I recommend this book as an introduction to learning to code and to Python specifically for new or early programmers. Evaluating the book on what I believe to be Zed’s own goals, the main flaws are in the sudden leaps from meticulously explained code examples to quizzes that expect you to do independent research and implementation. There wasn’t much in the way of “intermediate” tasks in the code drills. There’s some half-hearted name-dropping, but there’s not much guidance for readers who want to learn more than what’s covered in the book. To draw a contrast, we name things for what they are in the Haskell Book and footnote <em>many</em> references in addition to recommending further reading at the end of each chapter.</p>
+<p>Shifting to my own priorities, I’d say my main dissatisfaction with this book is that I wished there was a “follow-on” book which used a lot of the same methods for teaching people the <em>semantics</em> of Python. Zed has a “More Python” book in the works but I don’t know anything about it. The approach in <em>Learn Python the Hard Way</em> is very mechanical but it’s very monkey-see monkey-do. I realize this would’ve exploded the length of the book had it all been in one text. I wouldn’t wish the authoring of a 1,000+ page technical tome on any but my worst enemies.</p>
+<p>Of the formats of the book available, I recommend getting the ebook directly from Zed for the ergonomics of working side by side with the book, your text editor, and a terminal. This is also how we recommend working through the <a href="http://haskellbook.com">Haskell Book</a>, but we’re preparing a print version anyway. I only glanced at the videos that came with my purchase of the ebook. They seemed like a fairly straight forward walkthrough of the ebook. I don’t rate videos very highly in an educational context except to demonstrate basic things like <a href="https://www.youtube.com/watch?v=Li6oaO8x2VY">workflow</a>, but your mileage may vary.</p>
+<p><em>I did not review the Kindle version of this book!</em> If I had to guess, it was prepared from the print version by the print version’s publisher. As a result, I would not expect it to have the same content as the ebook directly from Zed Shaw. Further, I mostly wrote this review while reading the ebook because it was faster for me. There may be differences between the print and ebook versions I failed to note! I believe Zed continues to update the electronic version.</p>
+<p><a href="http://amzn.to/2niUtWs">Click here to get the print version of Learn Python the Hard Way on Amazon.</a> (Affiliate link)</p>
+<p><a href="https://learnpythonthehardway.org/">Click here to get the ebook version of Learn Python the Hard Way from Zed.</a> (No affiliate link)</p>
+</div>
+
+<div class="blurb">
+  <p>
+      I know this site is a bit of a disaster zone, but if you like my writing or think you could learn something useful from me, please <a href="http://haskellbook.com/">take a look at the Haskell book</a> I've been writing. There's a free sample available too!
+  </p>
+</div>
+
+<div class="footer">
+  <p>
+    Posted on March 25, 2017
+  </p>
+</div>
+]]></summary>
+</entry>
+<entry>
+    <title>The Hashrocket websocket shootout in Haskell</title>
+    <link href="http://bitemyapp.com//posts/2016-09-03-websocket-shootout-haskell.html" />
+    <id>http://bitemyapp.com//posts/2016-09-03-websocket-shootout-haskell.html</id>
+    <published>2016-09-03T00:00:00Z</published>
+    <updated>2016-09-03T00:00:00Z</updated>
+    <summary type="html"><![CDATA[<div class="info">
+    
+</div>
+
+<div class="post">
+<p>I <a href="https://github.com/hashrocket/websocket-shootout/pull/14">recently PR’d</a> a Haskell entry to Hashrocket’s <a href="https://hashrocket.com/blog/posts/websocket-shootout">websocket shootout</a>. <strike>Haskell seemed to do a lot better than C++, Rust, Golang, Elixir, Erlang, NodeJS, Ruby MRI, and JRuby.</strike> Although the Haskell version has been since fixed, so I can no longer run the benchmark reliably on my machine, so any final results will have to come from Hashrocket running the unagi-chan variant.</p>
+<!--more-->
+<h2 id="how-the-benchmark-works">How the benchmark works</h2>
+<p>The idea is to test how many concurrent clients a single websocket server (process?) can serve and how efficiently it can broadcast messages to all the clients.</p>
+<p>The constraints of the benchmark are that your 95th percentile round-trip time cannot exceed 250ms. This is a better measurement/restriction for concurrency benchmarks than the usual “how many can it handle before it crashes” or throughput metrics, so props to Hashrocket on that point.</p>
+<p>The client as-designed will increase the number of clients connected in the step-size specified and send test events at each step. If the 95th percentile round trip time exceeds 250ms, the benchmark client disconnects all client connections and halts. So, the last “line” of output you see from the client is essentially where you peaked before failing the SLA constraint.</p>
+<!-- ## Working version (no dropped messages) with unagi-chan -->
+<!-- This was contributed by [Sebastian Graf](https://github.com/sgraf812), thank you Sebastian! This also means this version _should_ have similar performance to [this test](https://blog.wearewizards.io/a-lot-of-websockets-in-haskell). -->
+<!-- ```haskell -->
+<!-- ``` -->
+<h2 id="what-follows-is-the-flawed-broadcast-implementation-i-wrote-that-drops-messages-so-caveat-lector">What follows is the flawed Broadcast implementation I wrote that drops messages, so caveat lector</h2>
+<p>Everything below is retracted for now as <a href="http://hackage.haskell.org/package/concurrent-extra">Broadcast</a> was dropping messages, which wasn’t explicitly permitted in the benchmark. I’m currently kicking around an <a href="http://hackage.haskell.org/package/unagi-chan">unagi-chan</a> based variant <a href="https://github.com/bitemyapp/websocket-shootout/pull/3">PR’d by Sebastian Graf</a>, but I don’t think <code>unagi-chan</code> was designed for broadcasting across many thousands of channels.</p>
+<p>For some context, <a href="https://blog.wearewizards.io/a-lot-of-websockets-in-haskell">this benchmark using Tsung</a> is roughly what I expected in terms of results modulo hardware differences, which is why I wasn’t that surprised when I saw the initial results. Currently the Go websocket client seems to behave very differently from Tsung’s, so I don’t have a reproduction of what Tom Hunger’s benchmark did.</p>
+<p>Before I retracted the results, I was peaking at 45,000 concurrent clients and a very low/flat latency with this version that uses <code>Broadcast</code>. However, <code>Broadcast</code> was dropping messages, so it’s not a valid comparison when the other benchmark servers weren’t dropping any messages. Incidentally, load-shedding is a great strategy for consistent server performance when it’s permissible ;)</p>
+<p>Here’s the source to the Haskell version at time of writing:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="ot">{-# LANGUAGE DeriveGeneric     #-}</span>
+<span class="ot">{-# LANGUAGE OverloadedStrings #-}</span>
+<span class="ot">{-# LANGUAGE QuasiQuotes       #-}</span>
+
+<span class="kw">module</span> <span class="dt">Main</span> <span class="kw">where</span>
+
+<span class="kw">import qualified</span> <span class="dt">Control.Concurrent</span> <span class="kw">as</span> <span class="dt">C</span>
+<span class="kw">import qualified</span> <span class="dt">Control.Concurrent.Broadcast</span> <span class="kw">as</span> <span class="dt">BC</span>
+<span class="kw">import </span><span class="dt">Control.Lens</span> <span class="kw">hiding</span> ((.=))
+<span class="kw">import </span><span class="dt">Control.Monad</span> (forever)
+<span class="kw">import </span><span class="dt">Data.Aeson</span>
+<span class="kw">import </span><span class="dt">Data.Aeson.Lens</span>
+<span class="kw">import </span><span class="dt">Data.Aeson.Types</span>
+<span class="kw">import </span><span class="dt">Data.ByteString.Lazy</span> (<span class="dt">ByteString</span>, toStrict)
+<span class="kw">import qualified</span> <span class="dt">Data.Char</span> <span class="kw">as</span> <span class="dt">DC</span>
+<span class="kw">import </span><span class="dt">Data.Functor</span> (void)
+<span class="kw">import </span><span class="dt">Data.Text</span> (<span class="dt">Text</span>)
+<span class="kw">import </span><span class="dt">Data.Text.Encoding</span> (decodeUtf8)
+<span class="kw">import </span><span class="dt">GHC.Generics</span>
+<span class="kw">import </span><span class="dt">Network.HTTP.Types</span> (status400)
+<span class="kw">import </span><span class="dt">Network.Wai</span>
+<span class="kw">import </span><span class="dt">Network.Wai.Handler.Warp</span>
+<span class="kw">import </span><span class="dt">Network.Wai.Handler.WebSockets</span>
+<span class="kw">import </span><span class="dt">Network.WebSockets</span>
+<span class="kw">import </span><span class="dt">Text.RawString.QQ</span></code></pre></div>
+<p>The above is just the usual preamble/noise. I had quasiquotes for a test/example I didn’t use in the actual server.</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="kw">type</span> <span class="dt">Broadcaster</span> <span class="fu">=</span> <span class="dt">BC.Broadcast</span> <span class="dt">ByteString</span></code></pre></div>
+<p>Hedging my bets in case I switched again after changing the broadcast type from <code>Text</code> to a lazy <code>ByteString</code>.</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="ot">amendTest ::</span> <span class="dt">Maybe</span> <span class="dt">Value</span>
+amendTest <span class="fu">=</span> decode <span class="fu">$</span> [r|
+{&quot;type&quot;:&quot;broadcast&quot;,&quot;payload&quot;:{&quot;foo&quot;: &quot;bar&quot;}}
+|]
+
+<span class="ot">amendBroadcast ::</span> <span class="dt">Value</span> <span class="ot">-&gt;</span> <span class="dt">Value</span>
+amendBroadcast v <span class="fu">=</span>
+  v <span class="fu">&amp;</span> key <span class="st">&quot;type&quot;</span> <span class="fu">.</span> _String <span class="fu">.~</span> <span class="st">&quot;broadcastResult&quot;</span></code></pre></div>
+<p>Above was just test code.</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="ot">broadcastThread ::</span> <span class="dt">Broadcaster</span> <span class="ot">-&gt;</span> <span class="dt">Connection</span> <span class="ot">-&gt;</span> <span class="dt">IO</span> ()
+broadcastThread bc conn <span class="fu">=</span> forever <span class="fu">$</span> <span class="kw">do</span>
+  t <span class="ot">&lt;-</span> BC.listen bc
+  sendTextData conn t</code></pre></div>
+<p>That’s all I do to relay broadcasted data to the listeners. Under the hood, <code>Broadcast</code> is:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="dt">MVar</span> (<span class="dt">Either</span> [<span class="dt">MVar</span> a] a)</code></pre></div>
+<p>I used <code>broadcast</code> from <code>concurrent-extra</code> because I knew I wanted the propagation/thread wake to happen via the MVar machinery in the GHC runtime system.</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell">wtf conn <span class="fu">=</span>
+  sendTextData conn (<span class="st">&quot;&lt;img src=\&quot;http://bit.ly/1kmRC7Q\&quot; /&gt;&quot;</span><span class="ot"> ::</span> <span class="dt">Text</span>)</code></pre></div>
+<p>Error return method borrowed from <a href="https://ocharles.org.uk/blog/posts/2013-12-19-websockets.html">ocharles</a>.</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="ot">mkPayload ::</span> <span class="dt">Text</span> <span class="ot">-&gt;</span> <span class="dt">Value</span> <span class="ot">-&gt;</span> <span class="dt">ByteString</span>
+mkPayload type_ payload <span class="fu">=</span> encode <span class="fu">$</span>
+  object [ <span class="st">&quot;type&quot;</span> <span class="fu">.=</span> <span class="dt">String</span> type_
+         , <span class="st">&quot;payload&quot;</span> <span class="fu">.=</span> payload
+         ]</code></pre></div>
+<p>Constructing a JSON value fitting the format expected by the test client and then <code>encode</code>-ing it into a <code>ByteString</code>.</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="ot">bidiHandler ::</span> <span class="dt">Broadcaster</span> <span class="ot">-&gt;</span> <span class="dt">Connection</span> <span class="ot">-&gt;</span> <span class="dt">IO</span> ()
+bidiHandler bc conn <span class="fu">=</span> <span class="kw">do</span>
+  _ <span class="ot">&lt;-</span> C.forkIO (broadcastThread bc conn)
+  <span class="co">--   [               1                ]</span>
+  forever <span class="fu">$</span> <span class="kw">do</span>
+  <span class="co">-- [2]</span>
+    msg <span class="ot">&lt;-</span> receiveDataMessage conn
+    <span class="co">--     [3]</span>
+    <span class="kw">case</span> msg <span class="kw">of</span>
+      <span class="dt">Text</span> t <span class="ot">-&gt;</span> <span class="kw">do</span>
+        <span class="kw">let</span> <span class="dt">Just</span> payload <span class="fu">=</span> t <span class="fu">^?</span> key <span class="st">&quot;payload&quot;</span>
+        <span class="co">--                 [       4       ]</span>
+        <span class="kw">case</span> t <span class="fu">^?</span> key <span class="st">&quot;type&quot;</span> <span class="fu">.</span> _String <span class="kw">of</span>
+        <span class="co">--   [           5           ]</span>
+          <span class="dt">Just</span> <span class="st">&quot;echo&quot;</span> <span class="ot">-&gt;</span> sendTextData conn (mkPayload <span class="st">&quot;echo&quot;</span> payload)
+          <span class="co">--             [                   6                      ]</span>
+          <span class="dt">Just</span> <span class="st">&quot;broadcast&quot;</span> <span class="ot">-&gt;</span> BC.signal bc (mkPayload <span class="st">&quot;broadcastResult&quot;</span> payload)
+          <span class="co">--                  [                       7                        ]</span>
+          _ <span class="ot">-&gt;</span> wtf conn
+      _ <span class="ot">-&gt;</span> <span class="kw">do</span>
+        wtf conn</code></pre></div>
+<p>I hate reading overly chopped-up code, so I annotated this one in the mode of the <a href="http://haskellbook.com">haskell book</a>.</p>
+<ol style="list-style-type: decimal">
+<li><p>We run the broadcast listener that relays data to the websocket client in a separate thread</p></li>
+<li><p>Running the client listener that (potentially) broadcasts data or just echoes back to the client in a <code>Control.Monad.forever</code> block.</p></li>
+<li><p>Block on receiving a data message (sum type, Text or Bytes)</p></li>
+<li><p>Pluck the payload value out of the JSON body because I’m too lazy to make a datatype for this.</p></li>
+<li><p>Get the event type out of the JSON body to dispatch on. We’re going to either echo or broadcast.</p></li>
+<li><p>If the event type was echo, kick the JSON data back to the client, but with the event type amended to <code>echo</code>.</p></li>
+<li><p>If the event type was broadcast, signal the broadcast handle to propagate the new JSON body with the payload and a <code>broadcastResult</code> event type.</p></li>
+</ol>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="ot">wsApp ::</span> <span class="dt">Broadcaster</span> <span class="ot">-&gt;</span> <span class="dt">ServerApp</span>
+wsApp bc pending <span class="fu">=</span> <span class="kw">do</span>
+  conn <span class="ot">&lt;-</span> acceptRequest pending
+  bidiHandler bc conn</code></pre></div>
+<p>Passing on the <code>Broadcast</code> handle and <code>Connection</code> to the handler.</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="ot">main ::</span> <span class="dt">IO</span> ()
+main <span class="fu">=</span> <span class="kw">do</span>
+  bc <span class="ot">&lt;-</span> BC.new
+  runServer <span class="st">&quot;127.0.0.1&quot;</span> <span class="dv">3000</span> (wsApp bc)</code></pre></div>
+<p>Spawn a <code>Broadcast</code>, pass the handle on to <code>wsApp</code>, run it with the provided server from the <code>wai-websockets</code> library. That’s it.</p>
+<h3 id="some-thoughts">Some thoughts</h3>
+<ul>
+<li><a href="https://www.reddit.com/r/haskell/comments/1wm9n4/question_about_stacks_in_haskell_and_rust/">A reddit conversation on the tradeoffs of Rust’s stack model vs. GHC’s</a></li>
+</ul>
+<p>Erlang is the only runtime competitive on per-thread (process in their lingo) overhead, but they bite the dust on message send. MVar take/put pairing is ~25-40ns, you’re eating at least 1,000 ns in Erlang. It’s possible a custom Erlang implementation (Cowboy?) could do a better job here, but I’m not sure how to do broadcast especially efficiently in Erlang.</p>
+<p>Asking how to efficiently broadcast to many Erlang processes on the mailing list <a href="http://erlang.org/pipermail/erlang-questions/2011-May/058307.html">gets you smarmy answers</a>.</p>
+<p>I was initially disappointed I didn’t get an excuse to optimize any of the Haskell code. It was limited only by the number of TCP connections I could bind, I had 2/3s of my 95th percentile RTT to burn yet. I messed with ulimit and the like a bit, but to really uncap it I’d need to change the client to connect to multiple IP addresses so I can use more TCP connections. Now I know it was because <code>Broadcast</code> was dropping messages and not tickling the slow parts as much as an implementation that forces broadcasts to all clients.</p>
+</div>
+
+<div class="blurb">
+  <p>
+      I know this site is a bit of a disaster zone, but if you like my writing or think you could learn something useful from me, please <a href="http://haskellbook.com/">take a look at the Haskell book</a> I've been writing. There's a free sample available too!
+  </p>
+</div>
+
+<div class="footer">
+  <p>
+    Posted on September  3, 2016
+  </p>
+</div>
+]]></summary>
+</entry>
+<entry>
+    <title>How to use UUID values with Persistent and Yesod</title>
+    <link href="http://bitemyapp.com//posts/2016-06-15-uuids-with-persistent-yesod.html" />
+    <id>http://bitemyapp.com//posts/2016-06-15-uuids-with-persistent-yesod.html</id>
+    <published>2016-06-15T00:00:00Z</published>
+    <updated>2016-06-15T00:00:00Z</updated>
+    <summary type="html"><![CDATA[<div class="info">
+    
+</div>
+
+<div class="post">
+<p>Some people find it trickier to store UUID values in their database with Persistent or to use UUID values in a Yesod web application than is really necessary. Here I’ll share some code from my work that demonstrates some patterns in applications that use Persistent or Yesod which should make it easier.</p>
+<!--more-->
+<p>The context for this post can be found in these two links:</p>
+<blockquote>
+<p>Replying to: <a href="https://jezenthomas.com/using-uuids-in-yesod/">Jezen Thomas writing about using UUIDs in Yesod</a> <br> Prior art: <a href="http://michaelxavier.net/posts/2015-04-14-Adding-a-UUID-Column-to-a-Persistent-Table.html">Michael Xavier on UUID columns in Persistent</a></p>
+</blockquote>
+<p>Alternate title: Same as the original, but with: “and no Control.Lens needed” tacked on.</p>
+<p>This code is adapted from stuff we’ve written at work.</p>
+<h1 id="persistent-uuid-integration">Persistent / UUID integration</h1>
+<h2 id="instances">Instances</h2>
+<p>Radioactive dumping ground for orphan instances. Adding the instances makes Persistent understand how to serialize and deserialize the UUID type. The orphans can be avoided if you use a <code>newtype</code>.</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="co">-- Note we&#39;re taking advantage of</span>
+<span class="co">-- PostgreSQL understanding UUID values,</span>
+<span class="co">-- thus &quot;PersistDbSpecific&quot;</span>
+<span class="kw">instance</span> <span class="dt">PersistField</span> <span class="dt">UUID</span> <span class="kw">where</span>
+  toPersistValue u <span class="fu">=</span> <span class="dt">PersistDbSpecific</span> <span class="fu">.</span> B8.pack <span class="fu">.</span> UUID.toString <span class="fu">$</span> u
+  fromPersistValue (<span class="dt">PersistDbSpecific</span> t) <span class="fu">=</span>
+    <span class="kw">case</span> UUID.fromString <span class="fu">$</span> B8.unpack t <span class="kw">of</span>
+      <span class="dt">Just</span> x <span class="ot">-&gt;</span> <span class="dt">Right</span> x
+      <span class="dt">Nothing</span> <span class="ot">-&gt;</span> <span class="dt">Left</span> <span class="st">&quot;Invalid UUID&quot;</span>
+  fromPersistValue _ <span class="fu">=</span> <span class="dt">Left</span> <span class="st">&quot;Not PersistDBSpecific&quot;</span>
+
+<span class="kw">instance</span> <span class="dt">PersistFieldSql</span> <span class="dt">UUID</span> <span class="kw">where</span>
+  sqlType _ <span class="fu">=</span> <span class="dt">SqlOther</span> <span class="st">&quot;uuid&quot;</span></code></pre></div>
+<h2 id="models">Models</h2>
+<p>This is where we actually use the UUID type in our models.</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="kw">module</span> <span class="dt">MyCompany.DB.Models</span> <span class="kw">where</span>
+
+share
+  [mkPersist sqlSettings,mkMigrate <span class="st">&quot;migration&quot;</span>]
+  [persistLowerCase|
+User json sql=users
+  email                  Email       sqltype=text
+  UniqUserEmail        email
+  uuid                   UUID        sqltype=uuid   default=uuid_generate_v4()
+  UniqUserUuid         uuid
+  deriving Show Read Eq Typeable
+|]</code></pre></div>
+<p>We use the default <code>JSON</code> representation generated so that the format is predictable for the datatypes. I was a little queasy with this initially and it does mean we have to watch what happens to Aeson, but I believe net-net it reduces defects that reach production.</p>
+<h1 id="yesod-pathpiece-integration">Yesod PathPiece integration</h1>
+<p>PathPiece is the typeclass Yesod uses to deserialize <code>Text</code> data into a more structured type, so that something like the following:</p>
+<pre><code>!/#Subdomain/#NumberedSlug    SomeRouteR  GET</code></pre>
+<p>could work. Here <code>Subdomain</code> and <code>NumberedSlug</code> are domain-specific types we made to represent a <em>concept</em> in our application in a type-safe manner. <code>PathPiece</code> often goes unnoticed by people new to Yesod, but it’s good to understand. For a super simple example:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="kw">newtype</span> <span class="dt">Subdomain</span> <span class="fu">=</span> <span class="dt">Subdomain</span> <span class="dt">Text</span>
+  <span class="kw">deriving</span> (<span class="dt">Eq</span>, <span class="dt">Show</span>, <span class="dt">Read</span>)
+
+<span class="kw">instance</span> <span class="dt">PathPiece</span> <span class="dt">Subdomain</span> <span class="kw">where</span>
+  toPathPiece (<span class="dt">Subdomain</span> t) <span class="fu">=</span> t
+  fromPathPiece <span class="fu">=</span> <span class="dt">Just</span> <span class="fu">.</span> <span class="dt">Subdomain</span></code></pre></div>
+<p>The PathPiece class itself isn’t terribly complicated or interesting:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="co">-- https://hackage.haskell.org/package/path-pieces-0.2.1/docs/Web-PathPieces.html</span>
+
+<span class="co">-- S for &quot;Strict&quot;</span>
+<span class="kw">class</span> <span class="dt">PathPiece</span> s <span class="kw">where</span>
+<span class="ot">    fromPathPiece ::</span> <span class="dt">S.Text</span> <span class="ot">-&gt;</span> <span class="dt">Maybe</span> s
+<span class="ot">    toPathPiece ::</span> s <span class="ot">-&gt;</span> <span class="dt">S.Text</span></code></pre></div>
+<p>To address the original post’s code, I wouldn’t have written that myself. I generally keep DB/IO stuff apart from things like forms. Partly this is because our web app repository is separate from our domain types / DB stuff repo, which sort of forces us to refactor things we might need to do more than once, or in a context that isn’t a web app. The use of applicative style and the double-lifting was not idiomatic.</p>
+<p>Alternate title rejected for being too snarky: I told the doctor it hurts when I move my arm a certain way. The doctor told me to stop moving my arm like that.</p>
+</div>
+
+<div class="blurb">
+  <p>
+      I know this site is a bit of a disaster zone, but if you like my writing or think you could learn something useful from me, please <a href="http://haskellbook.com/">take a look at the Haskell book</a> I've been writing. There's a free sample available too!
+  </p>
+</div>
+
+<div class="footer">
+  <p>
+    Posted on June 15, 2016
+  </p>
+</div>
+]]></summary>
+</entry>
+<entry>
+    <title>Speeding up the automated building and testing of our Haskell projects</title>
+    <link href="http://bitemyapp.com//posts/2016-03-28-speeding-up-builds.html" />
+    <id>http://bitemyapp.com//posts/2016-03-28-speeding-up-builds.html</id>
+    <published>2016-03-28T00:00:00Z</published>
+    <updated>2016-03-28T00:00:00Z</updated>
+    <summary type="html"><![CDATA[<div class="info">
+    
+</div>
+
+<div class="post">
+<p>I’m a big fan of using build servers to continually build and test the code I’m working on. I’m also a bit of a latency nut, so I like our builds to be <em>responsive</em>. To that end, I migrating our company away from CircleCI and yielded a 10x improvement to build times for my trouble.</p>
+<!--more-->
+<p>Alternate title: Arrest me for crimes against GNU Make.</p>
+<iframe width="420" height="315" src="https://www.youtube.com/embed/ZwNWviK5z0Q?rel=0" frameborder="0" allowfullscreen>
+</iframe>
+<p>I work for a company that uses Haskell for its primary application. We’re quite fond of having automatic builds fired off for each push to a branch and in our Github pull requests, so we were using <a href="http://circleci.com">CircleCI</a> for our builds. Our circle.yml looked a bit like this initially:</p>
+<div class="sourceCode"><pre class="sourceCode yaml"><code class="sourceCode yaml"><span class="fu">machine:</span>
+  <span class="fu">ruby:</span>
+    <span class="fu">version:</span><span class="at"> 2.1.7</span>
+  <span class="fu">services:</span>
+    <span class="kw">-</span> postgresql
+  <span class="fu">node:</span>
+    <span class="fu">version:</span><span class="at"> 5.1.0</span>
+
+<span class="fu">dependencies:</span>
+  <span class="fu">pre:</span>
+    <span class="kw">-</span> sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 575159689BEFB442
+    <span class="kw">-</span> <span class="fu">echo &#39;deb http:</span><span class="at">//download.fpcomplete.com/ubuntu trusty main&#39; | sudo tee /etc/apt/sources.list.d/fpco.list</span>
+    <span class="kw">-</span> sudo apt-get update &amp;&amp; sudo apt-get install stack -y
+    <span class="kw">-</span> cd frontend &amp;&amp; npm install
+    <span class="kw">-</span> cd frontend &amp;&amp; ./node_modules/.bin/bower install
+    <span class="kw">-</span> npm install -g purescript
+    <span class="kw">-</span> gem install bundler --pre
+    <span class="kw">-</span> cd sql &amp;&amp; bundle install
+
+  <span class="fu">override:</span>
+    <span class="kw">-</span> stack setup
+    <span class="kw">-</span> <span class="fu">cd app &amp;&amp; make frontend:</span>
+        <span class="fu">timeout:</span><span class="at"> 3000</span>
+        <span class="fu">environment:</span>
+          <span class="fu">UV_THREADPOOL_SIZE:</span><span class="at"> 2</span>
+    <span class="kw">-</span> <span class="fu">make dirty:</span>
+        <span class="fu">pwd:</span><span class="at"> app</span>
+
+<span class="fu">test:</span>
+  <span class="fu">override:</span>
+    <span class="kw">-</span> make sql
+    <span class="kw">-</span> make -C sql migrate
+    <span class="kw">-</span> stack test --jobs=1</code></pre></div>
+<p>However, I’m also a bit of a speed demon and impatient, so I was getting tired of the slow builds we had with CircleCI. 25-30 minutes for each build is just way too long when you’re waiting for the green checkmark to review code or merge it. My first pass was attempting to figure out what could be parallelized and what could be cached. Here’s what we added under <code>dependencies</code> for caching:</p>
+<div class="sourceCode"><pre class="sourceCode yaml"><code class="sourceCode yaml">  <span class="fu">cache_directories:</span>
+    <span class="kw">-</span> <span class="st">&quot;~/.stack&quot;</span>
+    <span class="kw">-</span> <span class="st">&quot;.stack-work&quot;</span>
+    <span class="kw">-</span> <span class="st">&quot;frontend/node_modules&quot;</span>
+    <span class="kw">-</span> <span class="st">&quot;frontend/bower_components&quot;</span>
+    <span class="kw">-</span> <span class="st">&quot;frontend/output&quot;</span></code></pre></div>
+<p>But it wasn’t good enough.</p>
+<div class="figure">
+<img src="/images/slow-build.png" alt="Even with caching, our CircleCI builds were taking about 20 minutes." />
+<p class="caption">Even with caching, our CircleCI builds were taking about 20 minutes.</p>
+</div>
+<p>We got a dedicated server and put <a href="http://drone.io">drone.io</a> on it instead of using CircleCI. We couldn’t have afforded the enterprise version of CircleCI and using something we can modify ourselves had a lot of appeal. Drone uses Docker to manage the build environment and after getting our build working and tests passing inside of the Docker containers, I was able to get Drone tracking our Github stuff pretty quickly. This got us down to about 6 minutes in order to do the following:</p>
+<ol style="list-style-type: decimal">
+<li>Build frontend assets</li>
+<li>Build two different Haskell projects and run their respective tests</li>
+</ol>
+<p>Here’s approximately what the <code>.drone.yml</code> looked like:</p>
+<div class="sourceCode"><pre class="sourceCode yaml"><code class="sourceCode yaml"><span class="fu">build:</span>
+  <span class="fu">image:</span><span class="at"> app</span>
+  <span class="fu">environment:</span>
+    <span class="kw">-</span> POSTGRES_PORT_5432_TCP_ADDR=localhost
+  <span class="fu">commands:</span>
+    <span class="kw">-</span> make tests
+
+<span class="fu">notify:</span>
+  <span class="fu">slack:</span>
+    <span class="fu">webhook_url:</span><span class="at"> OUR_WEBHOOK_URL</span>
+    <span class="fu">channel:</span><span class="at"> dev</span>
+    <span class="fu">username:</span><span class="at"> drone</span>
+    <span class="fu">template:</span><span class="at"> &gt;</span>
+      build <span class="co">#{{ build.number }} finished with a {{ build.status }} status. Commit message: {{build.message}} - See more at {{system.link_url}}/{{repo.owner}}/{{repo.name}}/{{build.number}}</span>
+
+<span class="fu">compose:</span>
+  <span class="fu">db:</span>
+    <span class="fu">image:</span><span class="at"> postgres</span>
+    <span class="fu">environment:</span>
+      <span class="kw">-</span> POSTGRES_USER=postgres
+      <span class="kw">-</span> POSTGRES_PASSWORD=password
+  <span class="fu">app:</span>
+    <span class="fu">image:</span><span class="at"> app</span>
+    <span class="fu">environment:</span>
+      <span class="kw">-</span> POSTGRES_PORT_5432_TCP_ADDR=localhost
+    <span class="fu">depends_on:</span>
+      <span class="kw">-</span> db</code></pre></div>
+<p>Note that we used Drone’s baked in Docker Compose’ish functionality so that we didn’t have to also configure a PostgreSQL server in the same container. <code>make tests</code> ends up running:</p>
+<pre><code>	make -C sql/ test
+	make -C lib/ test
+	make -C app/ test</code></pre>
+<p>These tasks stood up and migrated the database, built our business logic library and ran the tests, and build our web app and ran the tests.</p>
+<p>I wasn’t satisfied though, so I realized that since Drone uses Docker containers and our Haskell projects use <a href="http://stackage.org">Stackage</a> LTS for our package versions, all we needed to do was specify our current LTS resolver and build a bunch of dependencies we knew we’d need. Here’s what I added to the Docker build container’s Dockerfile in order to pre-build the dependencies:</p>
+<pre><code># Setup Stack
+RUN stack setup --resolver lts-5.8
+# ADD global-stack.yaml ~/.stack/global-project/stack.yaml
+# RUN stack setup --resolver lts-5.8
+
+# Cache some deps
+RUN stack --resolver lts-5.8 build lens-aeson yesod yesod-test esqueleto http-client free classy-prelude-yesod classy-prelude-conduit case-insensitive gravatar wreq xml-conduit warp hspec QuickCheck wai-logger persistent-postgresql HUnit uuid-aeson monad-logger mandrill email-validate yesod-auth yesod-newsfeed yesod-form haskell-src-exts cpphs polyparse xml-hamlet th-orphans either base-compat th-expand-syns th-lift MonadRandom</code></pre>
+<p>The fruit of my effort was:</p>
+<div class="figure">
+<img src="/images/fast-build.png" alt="Screenshot of a recent build &amp; test run taking only 2 minutes or so. I elided the branch name." />
+<p class="caption">Screenshot of a recent build &amp; test run taking only 2 minutes or so. I elided the branch name.</p>
+</div>
+<p>In so doing, our build times dropped from 20 or 25 minutes with CircleCI, down to 2-3 minutes on our private <a href="http://drone.io">Drone</a> server.</p>
+<p>Here’s the steps we took:</p>
+<ol style="list-style-type: decimal">
+<li><p>Added caching to our CircleCI build. This got us: 25 minutes -&gt; 20 minutes.</p></li>
+<li><p>Switched from CircleCI on their shared servers to Drone on a $100/month dedicated server. This got us: 20 minutes -&gt; 6 minutes.</p></li>
+<li><p>Started pre-building dependencies. This got us: 6 minutes -&gt; 2 or 3 minutes.</p></li>
+</ol>
+<p>Note that these 2 or 3 minutes isn’t just building a Haskell project, that takes a couple seconds. About half the time is spent building frontend assets! Our test suite is relatively fast because we cache things like the Yesod application initialization. I believe we could get this down to a minute or two, but I don’t want to muck about with our PureScript build chain. Even with two Haskell developers, we think the $100/month and time to get it working paid off quickly.</p>
+<p>I would estimate Drone took <em>slightly</em> longer than CircleCI originally did to get working initially, but I think the small difference is worth it and that it would’ve been faster for someone that dislikes Docker less.</p>
+</div>
+
+<div class="blurb">
+  <p>
+      I know this site is a bit of a disaster zone, but if you like my writing or think you could learn something useful from me, please <a href="http://haskellbook.com/">take a look at the Haskell book</a> I've been writing. There's a free sample available too!
+  </p>
+</div>
+
+<div class="footer">
+  <p>
+    Posted on March 28, 2016
+  </p>
+</div>
+]]></summary>
+</entry>
+<entry>
+    <title>Haskell is not trivial, but it's not unfair like Dark Souls either</title>
+    <link href="http://bitemyapp.com//posts/2016-02-06-haskell-is-not-trivial-not-unfair.html" />
+    <id>http://bitemyapp.com//posts/2016-02-06-haskell-is-not-trivial-not-unfair.html</id>
+    <published>2016-02-06T00:00:00Z</published>
+    <updated>2016-02-06T00:00:00Z</updated>
+    <summary type="html"><![CDATA[<div class="info">
+    
+</div>
+
+<div class="post">
+<p>Someone wrote a blog post where they have trouble querying a web API in Haskell code. I walk through some examples for how to do so with increasing sophistication building up to some simple uses of <code>lens</code> and <code>lens-aeson</code>.</p>
+<!--more-->
+<p>Alternate title: Another brutal fisking for which I’ll forever be remembered as a monster</p>
+<h3 id="dont-be-a-dick-and-dont-harass-the-original-author-please.-they-were-just-sharing-their-experience.">Don’t be a dick and don’t harass the original author please. They were just sharing their experience.</h3>
+<p>It <a href="https://www.youtube.com/watch?v=Bg9ccYzMbxc">took me five years to stop struggling with Haskell</a>, I know a lot of the UX stuff sucks. I think there’s a lot of value in using Haskell for everyday work so it’s disappointing when things fall apart for a learner for unnecessary reasons.</p>
+<p>I’ve since talked to the author of <a href="http://deliberate-software.com/haskell-is-the-dark-souls-of-programming/">the original post</a> and they’re cool with this post. Also they agree with me that <a href="http://www.serpentine.com/wreq/tutorial.html">wreq</a> should get more airplay. On with the show.</p>
+<h2 id="getting-the-ball-rolling-on-talking-to-http-apis">Getting the ball rolling on talking to HTTP APIs</h2>
+<blockquote>
+<p>I want to collect some statistics from the GitHub API. Watch as I retrace my steps attempting the Tomb of the Dread HTTPS GET Request.</p>
+</blockquote>
+<p>Okay, is there a reason we’re not going to use the Haskell <a href="https://github.com/phadej/github">Github</a> client for that? Anyway, we’ll follow along with what the author’s doing for now.</p>
+<blockquote>
+<p>Now I need to query the GitHub API. Not my first time to the rodeo, I generate a personal access token from GitHub and copy it to a local file. What query should I run first? How about the count for all ASM tetris repositories? Poking around the docs comes up with:</p>
+</blockquote>
+<pre><code>GET https://api.github.com/search/repositories?q=tetris+language:assembly&amp;sort=stars&amp;order=desc
+User-Agent: victim
+Authorization: token PUT_TOKEN_HERE</code></pre>
+<p>Cool so far. Think the author figured out Github’s docs more easily than I did.</p>
+<blockquote>
+<p>Easy life. Now how do you GET a resource in Haskell? Ah, Network.HTTP! I copy the front page sample into src/Lib.hs</p>
+</blockquote>
+<p>Okay first mistake. I know it sucks, but you want to be careful about using Hackage to find libraries for things unless you’re good at sniff-testing APIs. It’s generally better to ask what a good library to use is. The library named “HTTP” is a bit creaky and there are nicer, more up to date ways of doing HTTP in Haskell. Entirely not the author’s fault, but it’s pretty hard to get Hackage to do anything useful anyway. I know this is sucky implicit crap nobody should have to care about, but Haskell just <a href="http://hackage.haskell.org/">doesn’t</a> have the <a href="https://xingframework.com/home">culture</a> of design-focused self-promotion that <a href="https://www.totaljs.com/">other communities</a> have. Not a value judgment, in the end it’s probably better for end-users if they can use design as a signal of how up to date or nice a library is, but that’s just how it is right now. It would probably help if there were more Haskellers that didn’t sneer at web devs.</p>
+<p>Anyhoodle,</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="co">-- the article&#39;s version</span>
+<span class="kw">module</span> <span class="dt">Lib</span>
+    ( someFunc
+    ) <span class="kw">where</span>
+
+x <span class="fu">=</span> simpleHTTP (getRequest <span class="st">&quot;https://www.github.com/&quot;</span>) <span class="fu">&gt;&gt;=</span> fmap (take <span class="dv">100</span>) <span class="fu">.</span> getResponseBody
+
+<span class="ot">someFunc ::</span> <span class="dt">IO</span> ()
+someFunc <span class="fu">=</span>
+   print x</code></pre></div>
+<p>Well. Yes that sucks. It’s also a weird way to write it. It’s like the code people write the first time they figure out how do syntax desugars into <code>&gt;&gt;=</code>, then they just start using <code>&gt;&gt;=</code> and point-free all over the place for the fuck of it. We’ll re-do it in wreq:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="co">-- first.hs</span>
+<span class="co">-- this is my version</span>
+
+<span class="kw">module</span> <span class="dt">FirstExample</span>
+  ( someFunc )
+  <span class="kw">where</span>
+
+<span class="co">-- Don&#39;t give me any shit about lens.</span>
+<span class="co">-- You don&#39;t need to understand lens</span>
+<span class="co">-- to know the ^. is for accessing a</span>
+<span class="co">-- record field. The wreq tutorial</span>
+<span class="co">-- lays out the common use-cases.</span>
+
+<span class="kw">import </span><span class="dt">Control.Lens</span>
+<span class="kw">import qualified</span> <span class="dt">Data.ByteString.Lazy</span> <span class="kw">as</span> <span class="dt">BL</span>
+<span class="kw">import </span><span class="dt">Network.Wreq</span>
+
+<span class="co">-- Brand X</span>
+<span class="co">-- simpleHTTP (getRequest &quot;https://www.github.com/&quot;) &gt;&gt;= fmap (take 100) . getResponseBody</span>
+<span class="co">-- someFunc :: IO ()</span>
+<span class="co">-- someFunc =</span>
+<span class="co">--    print x</span>
+
+<span class="co">-- our version</span>
+<span class="ot">someFunc ::</span> <span class="dt">IO</span> ()
+someFunc <span class="fu">=</span> <span class="kw">do</span>
+  response <span class="ot">&lt;-</span> get <span class="st">&quot;https://www.github.com/&quot;</span>
+  print <span class="fu">$</span> BL.take <span class="dv">100</span> (response <span class="fu">^.</span> responseBody)</code></pre></div>
+<p>To load this beast up:</p>
+<pre><code>-- yes this&#39;ll take a moment, but then you won&#39;t
+-- have to do it again because it&#39;s Stack.
+$ stack build lens wreq
+$ stack ghci
+Prelude&gt; :l first.hs 
+[1 of 1] Compiling FirstExample     ( first.hs, interpreted )
+Ok, modules loaded: FirstExample.
+Prelude&gt; someFunc
+&quot;&lt;!DOCTYPE html&gt;\n&lt;html lang=\&quot;en\&quot; class=\&quot;\&quot;&gt;\n  &lt;head prefix=\&quot;og: http://ogp.me/ns# fb: http://ogp.me/ns&quot;</code></pre>
+<p>Right-o, moving along.</p>
+<blockquote>
+<p>Doesn’t compile. Durp, hackage is a package library, I need to add this to my cabal.</p>
+</blockquote>
+<p>If you want to and you wanted a package for this, sure. I’ll typically use a <a href="https://github.com/commercialhaskell/stack-templates">stack template</a> for new projects, but for initial exploration I’ll build the libraries as above I want and use them in <code>stack ghci</code>.</p>
+<blockquote>
+<p>…author struggles with HTTP only supporting HTTP…</p>
+</blockquote>
+<p><a href="http://www.serpentine.com/wreq/tutorial.html">wreq</a> and <a href="https://hackage.haskell.org/package/http-client-tls">http-client-tls</a> support HTTPS out of the box. YMMV. There’s a reason I don’t really recommend older Haskell libraries even if they’re maintained. The foundation of many libraries is http-client and it’s a pretty popular library to use. It’s used in <a href="https://hackage.haskell.org/package/http-conduit">http-conduit</a> and <a href="https://hackage.haskell.org/package/pipes-http">pipes-http</a> as well. The latter of which is a single 130 line module that has required almost zero maintenance in the past two years to add pipes streaming support to http-client. Things that use http-client are generally nice but you’ll often want to use something higher level than http-client itself, such as wreq.</p>
+<blockquote>
+<p>Author moves on to use http-conduit, which uses http-client-tls under the hood</p>
+</blockquote>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="ot">query ::</span> <span class="dt">IO</span> <span class="dt">String</span>
+query <span class="fu">=</span> <span class="kw">do</span>
+    initReq <span class="ot">&lt;-</span> parseUrl <span class="st">&quot;https://api.github.com/search/repositories&quot;</span>
+    <span class="kw">let</span> r <span class="fu">=</span> initReq
+                   { method <span class="fu">=</span> <span class="st">&quot;GET&quot;</span>
+                    , requestHeaders <span class="fu">=</span> [(hUserAgent, <span class="st">&quot;victim&quot;</span>)
+                                      , (hAuthorization, <span class="st">&quot;token PUT_TOKEN_HERE&quot;</span>)]}
+    <span class="kw">let</span> request <span class="fu">=</span> setQueryString [(<span class="st">&quot;q&quot;</span>, <span class="dt">Just</span> <span class="st">&quot;tetris+language:assembly&quot;</span>)
+                                 ,(<span class="st">&quot;order&quot;</span>, <span class="dt">Just</span> <span class="st">&quot;desc&quot;</span>)
+                                 ,(<span class="st">&quot;sort&quot;</span>, <span class="dt">Just</span> <span class="st">&quot;stars&quot;</span>)] r
+    manager <span class="ot">&lt;-</span> newManager tlsManagerSettings
+    res <span class="ot">&lt;-</span> httpLbs request manager
+    return <span class="fu">.</span> show <span class="fu">.</span> responseBody <span class="fu">$</span> res
+
+<span class="ot">someFunc ::</span> <span class="dt">IO</span> ()
+someFunc <span class="fu">=</span> <span class="kw">do</span>
+  query <span class="fu">&gt;&gt;=</span> putStrLn</code></pre></div>
+<p>They’re not using the streaming, might as well use <code>wreq</code>. Normally you’d have, such as in a web framework, an HTTP client pool which gets initialized with the web app once and then shared with the handlers. So the initial setup code would happen once. I do think the API staging out the parseUrl part is a bit pointless for the common-case but w/e. For the record, I wouldn’t consider this code to be bad.</p>
+<p>As it happens, wreq has an example of how to talk to Github’s API <em>in the tutorial</em> <a href="http://www.serpentine.com/wreq/">here</a> if you ctrl-f “most popular implementations of Tetris” you’ll find it.</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="dt">Prelude</span><span class="fu">&gt;</span> <span class="kw">let</span> opts <span class="fu">=</span> defaults <span class="fu">&amp;</span> param <span class="st">&quot;q&quot;</span> <span class="fu">.~</span> [<span class="st">&quot;tetris&quot;</span>]
+                             <span class="fu">&amp;</span> param <span class="st">&quot;language&quot;</span> <span class="fu">.~</span> [<span class="st">&quot;haskell&quot;</span>]
+<span class="dt">Prelude</span><span class="fu">&gt;</span> r <span class="ot">&lt;-</span> getWith opts <span class="st">&quot;https://api.github.com/search/repositories&quot;</span></code></pre></div>
+<p>As it happens, we can just skip past the explicit params thing and just do this:</p>
+<pre><code>Prelude&gt; response &lt;- get &quot;https://api.github.com/search/repositories?q=tetris+language:assembly&amp;sort=stars&amp;order=desc&quot;
+Prelude&gt; response ^. responseBody</code></pre>
+<p>But uh, we’ll get back to what they’re trying to do.</p>
+<blockquote>
+<p>Time to parse this mega JSON string. Aeson seems to be the biggest contender. To use Aeson and get the total_count value from the return, I needed the following additions:</p>
+</blockquote>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="ot">{-# LANGUAGE OverloadedStrings #-}</span>
+<span class="ot">{-# LANGUAGE DeriveGeneric #-}</span>
+
+<span class="kw">import </span><span class="dt">GHC.Generics</span>
+<span class="kw">import </span><span class="dt">Data.Aeson</span>
+
+<span class="kw">data</span> <span class="dt">ResultCount</span> <span class="fu">=</span> <span class="dt">ResultCount</span> {
+<span class="ot">  total_count ::</span> <span class="dt">Int</span> }
+  <span class="kw">deriving</span> (<span class="dt">Generic</span>, <span class="dt">Show</span>)
+
+<span class="kw">instance</span> <span class="dt">ToJSON</span> <span class="dt">ResultCount</span>
+<span class="kw">instance</span> <span class="dt">FromJSON</span> <span class="dt">ResultCount</span></code></pre></div>
+<p>Huh? No you don’t! <code>Int</code> already has a FromJSON instance.</p>
+<p>Just to make the point, I’ll do it in GHCi again with no module.</p>
+<pre><code>$ stack build aeson lens-aeson
+$ stack ghci
+Prelude&gt; import Network.Wreq
+Prelude&gt; import Control.Lens
+Prelude&gt; import Data.Aeson
+Prelude&gt; import Data.Aeson.Lens
+Prelude&gt; :set -XOverloadedStrings
+Prelude&gt; response &lt;- get &quot;https://api.github.com/search/repositories?q=tetris+language:assembly&amp;sort=stars&amp;order=desc&quot;
+
+Prelude&gt; response ^? responseBody . key &quot;total_count&quot;
+Just (Number 354.0)
+Prelude&gt; response ^? responseBody . key &quot;total_count&quot; . _Number
+Just 354.0</code></pre>
+<p>Don’t make it harder than it has to be. <em>Ask for help!</em></p>
+</div>
+
+<div class="blurb">
+  <p>
+      I know this site is a bit of a disaster zone, but if you like my writing or think you could learn something useful from me, please <a href="http://haskellbook.com/">take a look at the Haskell book</a> I've been writing. There's a free sample available too!
+  </p>
+</div>
+
+<div class="footer">
+  <p>
+    Posted on February  6, 2016
+  </p>
+</div>
+]]></summary>
+</entry>
+<entry>
+    <title>Either and (,) in Haskell are not arbitrary</title>
+    <link href="http://bitemyapp.com//posts/2015-10-19-either-is-not-arbitrary.html" />
+    <id>http://bitemyapp.com//posts/2015-10-19-either-is-not-arbitrary.html</id>
+    <published>2015-10-19T00:00:00Z</published>
+    <updated>2015-10-19T00:00:00Z</updated>
+    <summary type="html"><![CDATA[<div class="info">
+    
+</div>
+
+<div class="post">
+<p>Programmers don’t understand that it doesn’t matter <em>what</em> the default target is for a type like <code>Either</code> as long as there is one and it never changes. I go into some detail and justification of a programming language design that makes decisions like this inherent to the structure of the type rather than author’s (arbitrary and harmful) preference. The <code>Left</code> and <code>Right</code> of <code>Either</code> do not mean anything in and of themselves.</p>
+<!--more-->
+<p>Alternate title: Unnecessary particularity considered harmful</p>
+<p>Since I’d rather explain this in O(1) rather than O(twitter) time, this is a brief rundown of why the way type constructors and constructor classes work in Haskell is not arbitrary. The post is not a tutorial on higher-kinded types, constructor classes, or functor. Don’t know these things? <a href="http://haskellbook.com">I write stuff</a> so you can <a href="https://github.com/bitemyapp/learnhaskell">learn ’em</a>.</p>
+<p>First, the data types we’re dealing with:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="kw">data</span> <span class="dt">Either</span> a b <span class="fu">=</span>
+    <span class="dt">Left</span> a
+  <span class="fu">|</span> <span class="dt">Right</span> b
+
+<span class="co">-- sorta fake</span>
+<span class="kw">data</span> (,) a b <span class="fu">=</span>
+  (a, b)</code></pre></div>
+<p>We’ll use Functor to make the point, and Functor looks like this:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="kw">class</span> <span class="dt">Functor</span> f <span class="kw">where</span>
+<span class="ot">    fmap ::</span> (a <span class="ot">-&gt;</span> b) <span class="ot">-&gt;</span> f a <span class="ot">-&gt;</span> f b</code></pre></div>
+<p>Some of the <a href="https://www.reddit.com/r/haskell/comments/3okick/foldable_for_nonhaskellers_haskells_controversial/">post-FTP</a> drama has included people asserting that the way the Foldable instances for <code>Either</code> and <code>(,)</code> work is arbitrary. Not so. They work on the same principle as the Functor instances:</p>
+<pre><code>Prelude&gt; fmap (+1) (Right 1)
+Right 2
+Prelude&gt; fmap (+1) (Left &quot;blah&quot;)
+Left &quot;blah&quot;
+
+Prelude&gt; fmap (+1) (0, 0)
+(0,1)</code></pre>
+<p>The first thing to recognize is that <code>Left</code> and <code>Right</code> in <code>Either</code> mean nothing to your program and similarly the first and second positions in <code>(,)</code> mean nothing in and of themselves. Because type constructors in Haskell work the same way as data constructors and functions in general do, the way their instances work is the <em>only</em> way they could work. <code>Either</code> and <code>(,)</code> will always have one type argument that gets mapped and one that does not. It doesn’t really matter which data constructor that is; we can only benefit by letting the consistent semantics of Haskell pick the type argument for us.</p>
+<p>The only useful purpose a Functor for Either can ever have is to have one type which is transformed by the lifted functions and one which is not. If you want to be able to pick arbitrary targets, then you want lenses rather than a typeclass. If you want to able to transform both, then you want <a href="http://hackage.haskell.org/package/base-4.8.1.0/docs/Data-Bifunctor.html#t:Bifunctor">Bifunctor</a>.</p>
+<p>Note that with <code>bimap</code> in the <code>Bifunctor</code> class you have to provide <em>two</em> functions you’re mapping rather than one because the types <code>a</code> and <code>b</code> <em>could</em> vary and be different types. Even if they are the same type, you can’t write the Functor instance as if they were because the <code>Either</code> and <code>(,)</code> are defined with two distinct type arguments.</p>
+<p>If you want a “tuple” of values that were all of the same type…well, go ahead. You can write it yourself:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="co">-- We use this in the book to demonstrate how</span>
+<span class="co">-- type constructors and constructor classes</span>
+<span class="co">-- work in Haskell, as it happens.</span>
+<span class="kw">data</span> <span class="dt">Pair</span> a <span class="fu">=</span>
+  <span class="dt">Pair</span> a a
+  <span class="kw">deriving</span> (<span class="dt">Eq</span>, <span class="dt">Show</span>)
+
+<span class="kw">instance</span> <span class="dt">Functor</span> <span class="dt">Pair</span> <span class="kw">where</span>
+  fmap f (<span class="dt">Pair</span> a a&#39;) <span class="fu">=</span> <span class="dt">Pair</span> (f a) (f a&#39;)</code></pre></div>
+<p>Then to see how the Functor for this behaves:</p>
+<pre><code>Prelude&gt; fmap (+1) (Pair 1 1)
+Pair 2 2
+Prelude&gt; fmap show (Pair 1 1)
+Pair &quot;1&quot; &quot;1&quot;
+Prelude&gt; fmap show (Pair 1 9001)
+Pair &quot;1&quot; &quot;9001&quot;</code></pre>
+<p>A Functor for <code>(,)</code> can only ever map over <em>one</em> of the fields of the type. It might as well be the one that occurs naturally from the order of arguments to the type constructor (read: functions). <code>length</code> written in terms of Foldable has nothing to do with the contents of the Foldable structure; it has to do with the <em>structure</em> itself. You wouldn’t expect length of a list of lists to measure the length of one or more of the sublists:</p>
+<pre><code>Prelude&gt; length [[], []]
+2</code></pre>
+<p>You would expect it to measure how many cons cells were in the outermost list. Unless you lifted it. If you lifted it, then you could get the measure of all the list values contained within! (this is why we have <code>fmap</code>)</p>
+<pre><code>Prelude&gt; fmap length [[], [&quot;lol&quot;]]
+[0,1]
+
+Prelude&gt; (fmap . fmap) length [[], [&quot;lol&quot;]]
+[[],[3]]
+
+-- Doesn&#39;t change for Maybe
+Prelude&gt; length (Just &quot;blah&quot;)
+1
+Prelude&gt; fmap length (Just &quot;blah&quot;)
+Just 4
+Prelude&gt; fmap length (Nothing :: Maybe String)
+Nothing</code></pre>
+<p>Similarly, no matter what food you move around on your plate, <code>length</code> for <code>(,)</code> is never going to do anything but return 1 because there’s always one value of the type you’re folding over with <code>(,)</code>. Even if you add type lambdas.</p>
+<pre><code>Prelude&gt; length (&quot;blah&quot;, &quot;&quot;)
+1
+-- unless we lift it over the tuple structure.
+Prelude&gt; fmap length (&quot;blah&quot;, &quot;&quot;)
+(&quot;blah&quot;,0)
+Prelude&gt; fmap length (&quot;blah&quot;, &quot;Papuchon&quot;)
+(&quot;blah&quot;,8)</code></pre>
+<p>Want to map over the left-hand side? Use <code>Bifunctor</code>:</p>
+<pre><code>Prelude&gt; import Data.Bifunctor
+Prelude&gt; :t first
+first :: Bifunctor p =&gt; (a -&gt; b) -&gt; p a c -&gt; p b c
+Prelude&gt; :t second
+second :: Bifunctor p =&gt; (b -&gt; c) -&gt; p a b -&gt; p a c
+
+Prelude&gt; first length (&quot;blah&quot;, &quot;Papuchon&quot;)
+(4,&quot;Papuchon&quot;)
+Prelude&gt; second length (&quot;blah&quot;, &quot;Papuchon&quot;)
+(&quot;blah&quot;,8)</code></pre>
+<p>Or lenses! Whatever you like!</p>
+<p>The Functor and Foldable for Either and (,) can only ever do one useful thing. We may as well make it so we know exactly which type is being mapped over by looking at the type. What Functor and Foldable do, how they work, is essentially what the combination of higher kinded types and typeclasses into constructor classes <em>is for</em>. This is their purpose for existing. If you want to address more structure than what Functor/Foldable let you talk about, then use Bifunctor or Bifoldable. If you want to choose arbitrary targets, then use lenses and prisms. There’s no reason to break the consistent and predictable semantics of the language because the (necessary by construction!) Functor instance for <code>Either</code> or <code>(,)</code> appears arbitrary to you. In fact, they’re the complete opposite of arbitrary or contingent because their instances follow directly from how the datatypes are defined. This uniqueness and necessity is why we can have the <code>DeriveFunctor</code> and <code>DeriveFoldable</code> extensions which will generate Functor and Foldable instances knowing only the definition of a datatype.</p>
+<h2 id="addendum">Addendum</h2>
+<p>It doesn’t matter if the definition of Either was:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="kw">data</span> <span class="dt">Either</span> a b <span class="fu">=</span> <span class="dt">Left</span> b <span class="fu">|</span> <span class="dt">Right</span> a</code></pre></div>
+<p>It matters that a default exists and is chosen for the Functor because that’s the only reason to make something Left or Right. Contrary to developer intuitions, Right doesn’t mean “success”. The data constructors of <code>Either</code> are defined by what the Functor/Applicative/etc. instances do.</p>
+<p>I’ve used <code>Left</code> to indicate “success” in situations where I want to stop fmap’ing a computation that might fail. It is the picking-of-a-winner that Haskell’s semantics induce that is valuable and not arbitrary. What is arbitrary is what we call left and right and the syntactic position of their type arguments in the type constructor. There’s much less utility in an Either that doesn’t have a Functor with a default target.</p>
+<p>Further, they aren’t arbitrary. Following from the definition of arbitrary that Google provided:</p>
+<blockquote>
+<p>based on random choice or personal whim, rather than any reason or system.</p>
+</blockquote>
+<p>We can break it down as follows:</p>
+<ol style="list-style-type: decimal">
+<li><p>Is there a reason the Either Functor works the way it does? Yes, it makes the datatype more useful in that it gives us a biased-choice Functor which is frequently useful regardless of whether the biased-target represents success or not. The way Functor behaves is useful insofar as its only reason for existing is to pick one of the two exclusive choices. There is no reason for programmers to favor the target being Left or Right. Those words mean nothing and word/name-fetishism kills software reuse and modularity.</p></li>
+<li><p>Is there a systematic cause for why the <code>Either</code> Functor works the way it does? Yes, cf. Jones’ work on Gofer dating to 1993/1994. The way the Functor behaves is necessary and follows from how the language works in a natural way. You can make a learner predict what the <code>Either</code> Functor does if you teach them how HKTs and constructor classes work. I’ve done this with learners before. This isn’t surprising if you know Haskell.</p></li>
+</ol>
+<h3 id="summary">Summary</h3>
+<p>It does not matter whether one of your types is going to be in the Left or Right data constructor, all that matters is what you want your Functor-target to be. Not having a universal winner for Left or Right being the Functor target is bizarre and counter-productive. You can not and will not ever have a single Functor that lets you pick either/or of Left or Right because <code>a != b</code>.</p>
+<p>If you want to map over your “error” value, I have news for you! <code>Right</code> just became your error value. The names Left and Right <em>mean nothing</em>. The code is what it does. If you want to be able to arbitrarily pick Left, Right or both as a target, what you want is Bifunctor or a prism. It is <em>madness</em> to give programmers an avenue to introduce useless arbitrariness to their code. Preventing the proliferation of meaningless difference is an excellent way for people doing PL to improve a language.</p>
+<p>We’ve covered both ways in which the Functor instance is not arbitrary, due to being both necessary and useful. We can also see that the way the Either Functor works is neither random nor based on whim.</p>
+</div>
+
+<div class="blurb">
+  <p>
+      I know this site is a bit of a disaster zone, but if you like my writing or think you could learn something useful from me, please <a href="http://haskellbook.com/">take a look at the Haskell book</a> I've been writing. There's a free sample available too!
+  </p>
+</div>
+
+<div class="footer">
+  <p>
+    Posted on October 19, 2015
+  </p>
+</div>
+]]></summary>
+</entry>
+<entry>
+    <title>Why we don't chuck our readers into web apps</title>
+    <link href="http://bitemyapp.com//posts/2015-08-23-why-we-dont-chuck-readers-into-web-apps.html" />
+    <id>http://bitemyapp.com//posts/2015-08-23-why-we-dont-chuck-readers-into-web-apps.html</id>
+    <published>2015-08-23T00:00:00Z</published>
+    <updated>2015-08-23T00:00:00Z</updated>
+    <summary type="html"><![CDATA[<div class="info">
+    
+</div>
+
+<div class="post">
+<p>Haskell programmers that often forget how hard it was to learn and use Haskell. They also forget that without the benefit of a code example that does precisely what one wants, it can be nearly impossible for someone to make forward progress unless they have a solid foundation in the language itself. We justify how this reality influences the way we write the <a href="http://haskellbook.com">Haskell Programming from first principles</a> book.</p>
+<!--more-->
+<p>Alternate title: Making web apps considered harmful</p>
+<p>My co-author, Julie, and I are writing a book for learning Haskell. We’re writing it with the goal of getting anyone, no matter their background in programming, from no knowledge of Haskell to an intermediate level with as much real, solid knowledge of how to use and read the language as possible, so that they can go on to use Haskell for whatever purposes they are most interested in.</p>
+<h2 id="just-show-me-how-to-make-a-web-app-already">Just show me how to make a web app already!</h2>
+<p>Well, we could <a href="http://c2.com/cgi/wiki?CargoCultProgramming">cargo-cult</a> you through it, but you won’t learn Haskell. You’ll thrash around and give up when you need to do something you can’t copy from previous demonstrations. This isn’t hypothetical – I’ve seen a <em>lot</em> of people give up on Haskell because this is how they tried to learn the language.</p>
+<p>What you want is to understand the language well enough so that when you reach the point where you can’t copypasta, you have the knowledge to do what you need to do.</p>
+<h2 id="what-youre-saying-is-you-could-just-show-me-how-to-write-a-web-app">What you’re saying is you <em>could</em> just show me how to write a web app?</h2>
+<p>Well, let’s take the example of the ScottyT monad in the Scotty web framework, a very simple library for making web apps in Haskell. It’s actually my favorite for showing people how to make their first web app or API.</p>
+<p>To understand ScottyT, you’d need to understand ReaderT because that’s basically what it is – it’s providing the request information and parameters via that mechanism.</p>
+<p>So now you need to understand ReaderT, which means needing to understand monad transformers and Reader. Understanding monad transformers requires understanding monads. Understanding Reader requires understanding the functor, applicative, and monad of functions. Understanding monads, applicative, and functor requires understanding higher-kinded types, constructor classes. Understanding constructor classes requires understanding typeclasses, kinds, and type constructors. Understanding higher-kinded types requires understanding type constructors and algebraic datatypes.</p>
+<p>Understanding kinds requires understanding types, which requires understanding terms and a teensy bit of how mathematical sets work. Understanding algebraic datatypes requires understanding products and sums. Understanding products and sums requires understanding addition, multiplication, types, cardinality, type constructors, and data constructors. Understanding type constructors requires understanding types and data constructors. Understanding data constructors requires understanding terms/expressions, functions, and values. Understanding terms, expressions, functions, and values requires understanding the lambda calculus.</p>
+<p>And that’s just for the Reader bit in Scotty, not for a more comprehensive web framework like Yesod.</p>
+<p>That’s why the book starts from understanding the lambda calculus and expressions and works its way up from there.</p>
+<h2 id="ok-maybe-what-i-need-is-to-start-with-a-monad-tutorial.-the-internet-has-so-many-of-them">OK, maybe what I need is to start with a monad tutorial. The internet has so many of them!</h2>
+<p>The internet does, indeed, have many monad tutorials. People struggle with monads, often because they don’t understand those basic foundations we just outlined very well. Once they finally feel like they have a good intuition for how to use monads, they want to share that intuition so they try to put their intuition into words. It isn’t always very successful, because sometimes putting algebras into words is hard. Even when it is pretty decent, it often leads to questionable intuitions on the part of the student reader because the student reader (that would be you) hasn’t yet experimented with practical examples and implemented monads on their own.</p>
+<p>In our book, by the time you get to monads, you understand all those foundations well enough that monads themselves aren’t that hard. When you understand the monads, then you can work up to understanding monad transformers and, ultimately, Scotty. But the awesome part is, you won’t <em>only</em> be able to understand and work with Scotty then. Having that real understanding gives you the ability to understand <em>so many</em> Haskell libraries that rely on monads, Reader, and monad transformers. It’s a whole new universe, because you didn’t cargo cult to start with.</p>
+<h2 id="why-cant-i-learn-haskell-the-way-i-learned-bogolang">Why can’t I learn Haskell the way I learned $BOGOLANG?</h2>
+<p>Because <code>$BOGOLANG</code> is just like every other language you’ve already learned. Hash-mappy/stringy/numby/mutatey whatevers.</p>
+<h2 id="but-why-does-haskell-take-so-long-to-learn">But why does Haskell take so long to learn?</h2>
+<p>It doesn’t, and it isn’t really hard. You just have more to learn upfront than you would jumping between Ruby/Python/Go/JavaScript/etc.</p>
+<p>Haskell really requires less learning to understand than most imperative languages. Don’t believe me? See if you can predict <a href="https://github.com/tonymorris/java-trivia">what these Java programs do without recourse to the Java Language Standard</a>. With Haskell more (not all) of how the language works is a fairly natural and necessary byproduct of the core lambda calculus. If you can understand the lambda calculus and how basic mathematical functions – arithmetic, low-level algebra – work, you can understand Haskell.</p>
+<p>If you want another example, consider how many undefined behaviors you have to learn to identify (often involving non-local effects) to write a correct C program which will behave the same across different compilers and compiler versions.</p>
+<p>Haskell can be learned quickly, especially if you are able or willing to put aside a lot of what you know about other languages and meet Haskell on its own terms. I could train somebody in a week or two of pair programming like IMVU did with their Haskell hires, and I’ve given people 3-4 hour accelerated tours of Haskell in the past.</p>
+<h2 id="okay-but-this-book-seems-long-yo.">Okay, but this book seems <em>long</em> yo.</h2>
+<p>We’re trying <em>very hard</em> to make it simultaneously accessible to non-programmers and still take everyone (experienced programmers included) far enough that they can begin to use Haskell for their own projects. Heck, there are experienced <em>Haskellers</em> who tell us their understanding of Haskell has been enriched by what we’ve covered. When you’re writing a book for self-learners you have to go slower and be much more careful about covering everything.</p>
+<p>The combination of a meticulous pedagogy, assuming very little about the reader, and wanting to cover enough idioms in Haskell code that you’ll be able to pick up the rest lends itself to a longer book. We think the book reads relatively breezily and most of the “length” is actually examples and exercises, <em>not</em> dense prose.</p>
+<h2 id="but-i-wanna-learn-haskell-by-doing-projects">But I wanna learn Haskell by doing projects!</h2>
+<p>That’s fine, but you still have to learn the language before that even remotely makes sense. If you haven’t learned Haskell, then you do not <em>by definition</em> know how to learn Haskell. The approach we take is based on experience teaching people, and plunging into projects prematurely is a strong correlate for burning out and giving up.</p>
+<h2 id="so-youre-saying-there-arent-any-projects-in-haskell-programming">So you’re saying there aren’t any projects in <a href="http://haskellbook.com/">Haskell Programming</a>?</h2>
+<p>No no, there <em>absolutely</em> are projects and as we complete more of the book, we’ll add more! But we take a gradual and careful approach to them, introducing them only after you’ve learned the basics of the language. This makes it so you can focus on each step of the process. This also minimizes the amount of cargo-culting required to get a working project as well.</p>
+<h2 id="is-there-anything-you-could-cut">Is there anything you could cut?</h2>
+<p>We could cut the chapters on non-strictness and IO and it wouldn’t bite into the core pedagogical goals, but I really wanted to address those topics as they are common but unnecessary sources of confusion and misunderstanding.</p>
+<p>Not much else really. A compactness edit would only shave 5-10% off at best.</p>
+<p>I guess we <em>could</em> cut some exercises but you don’t really want that, now do you?</p>
+</div>
+
+<div class="blurb">
+  <p>
+      I know this site is a bit of a disaster zone, but if you like my writing or think you could learn something useful from me, please <a href="http://haskellbook.com/">take a look at the Haskell book</a> I've been writing. There's a free sample available too!
+  </p>
+</div>
+
+<div class="footer">
+  <p>
+    Posted on August 23, 2015
+  </p>
+</div>
+]]></summary>
+</entry>
+<entry>
+    <title>Building a Haskell game</title>
+    <link href="http://bitemyapp.com//posts/2015-04-26-installing-a-haskell-game.html" />
+    <id>http://bitemyapp.com//posts/2015-04-26-installing-a-haskell-game.html</id>
+    <published>2015-04-26T00:00:00Z</published>
+    <updated>2015-04-26T00:00:00Z</updated>
+    <summary type="html"><![CDATA[<div class="info">
+    
+</div>
+
+<div class="post">
+<p>Sometimes building a package with dependencies on OpenGL can be a little confusing for people new to Haskell. I will use a simple game on Hackage as an exercise for demonstrating how you might do this on Ubuntu. Note: this was written before <a href="http://haskellstack.org">Stack</a> was a thing.</p>
+<!--more-->
+<p>This is as much about demonstrating how to show your process as it is about how to install a game.</p>
+<p>So our objective is to build and run a game named <a href="http://hackage.haskell.org/package/Shu-thing">Shu-thing</a> on Hackage.</p>
+<div class="figure">
+<img src="/images/shu-thing-1.png" />
+
+</div>
+<p>First, I used <code>cabal unpack</code> to download the game’s sources. Then I changed into the project directory and created my Cabal sandbox. To see more about how to use sandboxes, see my <a href="//howistart.org/posts/haskell/1">HowIStart tutorial</a>.</p>
+<div class="figure">
+<img src="/images/shu-thing-2.png" />
+
+</div>
+<p>Then, with the sandbox ready to go I started to install the dependencies for the project.</p>
+<div class="figure">
+<img src="/images/shu-thing-3.png" />
+
+</div>
+<p>But it failed, something about needing a C library. My next step was to Google search “Missing C Library: GL” so I could find the resolution.</p>
+<div class="figure">
+<img src="/images/shu-thing-4.png" />
+
+</div>
+<p>I chose the first link because it mentioned Gloss, which I know to be a Haskell library and thus likely relevant to my problem than a generic OpenGL issue. Realistically, any language would need to install the same OpenGL dependencies, but starting with the most specific questions/answers first is usually best.</p>
+<div class="figure">
+<img src="/images/shu-thing-5.png" />
+
+</div>
+<p>There I saw instructions to install the appropriate GLUT dependencies for Debian/Ubuntu-alike distributions. I was using Ubuntu, so this suited me fine. This also matched what I knew about Shu-thing <a href="http://i.imgur.com/BzpUZqx.png">because its only dependency other than base was in fact GLUT</a>.</p>
+<div class="figure">
+<img src="/images/shu-thing-6.png" />
+
+</div>
+<p>This is me firing off those instructions.</p>
+<div class="figure">
+<img src="/images/shu-thing-7.png" />
+
+</div>
+<p>Then I re-ran the dependencies install with <code>cabal install --only-dependencies</code> because that was the last thing to fail, and it succeeded. Next step was to build the executable for Shu-thing itself with <code>cabal build</code>. This also succeeded and reached the linking stage, which also didn’t fail.</p>
+<div class="figure">
+<img src="/images/shu-thing-8.png" />
+
+</div>
+<p>Then I checked the game out which had a nifty wireframe aesthetic :)</p>
+<p>The point here is that I didn’t know how to build this game or get it working 15 minutes before I started on this blog post and it wouldn’t have done as much good to just dump a listing of instructions. Rather, it was more important “show my work”, even if that entailed just googling for what dependencies I needed.</p>
+<p>Like the way I share stuff? I’m working on a book with <a href="https://superginbaby.wordpress.com/">Julie Moronuki</a>. Julie, in addition to editing and writing the book with me, is also testing our book with her 10 year old son. Check out the <a href="http://haskellbook.com/">Haskell Programming book site</a> to keep posted on what’s going on. We’ve got a mailing list you can sign up for there if you want to know when the book is available for early access or final release.</p>
+</div>
+
+<div class="blurb">
+  <p>
+      I know this site is a bit of a disaster zone, but if you like my writing or think you could learn something useful from me, please <a href="http://haskellbook.com/">take a look at the Haskell book</a> I've been writing. There's a free sample available too!
+  </p>
+</div>
+
+<div class="footer">
+  <p>
+    Posted on April 26, 2015
+  </p>
+</div>
+]]></summary>
+</entry>
+<entry>
+    <title>Functional Education</title>
+    <link href="http://bitemyapp.com//posts/2014-12-31-functional-education.html" />
+    <id>http://bitemyapp.com//posts/2014-12-31-functional-education.html</id>
+    <published>2014-12-31T00:00:00Z</published>
+    <updated>2014-12-31T00:00:00Z</updated>
+    <summary type="html"><![CDATA[<div class="info">
+    
+</div>
+
+<div class="post">
+<p>I often get asked why I do or do not recommend a particular resource for learning Haskell. To save some time and to record more detail than I’ll remember off the top of my head, I’ve written a round-up of the issues with various resources and books people use to learn Haskell.</p>
+<!--more-->
+<p>Rejected title: Focus on fixing things.</p>
+<h1 id="here-because-youre-wondering-how-to-learn-haskell">Here because you’re wondering how to learn Haskell?</h1>
+<p>My coauthor <a href="https://superginbaby.wordpress.com/">Julie Moronuki</a> and I have been writing <a href="http://haskellbook.com/">a Haskell book named Haskell Programming from first principles</a>. We think it’s the easiest and most comprehensive way to learn Haskell if you’re willing to get a book. You can check out what others have thought of it in these <a href="http://haskellbook.com/feedback.html">reviews of the Haskell book</a>. If you’re just plain curious, what follows below is a somewhat brutal evaluation of what was available at the time (December 2014) I wrote this post. Hopefully it’ll explain why I chose to write a rather long book with Julie.</p>
+<h1 id="the-problem-of-learning-functional-programming">The problem of learning functional programming</h1>
+<p>There was a thread recently where a person was complaining about <a href="http://learnyouahaskell.com">LYAH</a>, <a href="http://www.seas.upenn.edu/~cis194/spring13/">cis194</a>, the <a href="http://www.cs.tufts.edu/comp/150FP/archive/brent-yorgey/tc.pdf">Typeclassopedia</a>, <a href="http://book.realworldhaskell.org/">Real World Haskell</a>, and other materials for learning Haskell. Their post ended with, “So, as I apologize for what could easily be considered a rant, can anyone please point out a simple, error free, and intelligible haskell tutorial?”.</p>
+<p>It was an unconstructive rant, but I don’t blame them for being frustrated. It took me a long time to get anywhere with understanding Haskell. Only after several years and and after I started teaching what I learned did I get any traction. There were several replies to the submitter of the thread. Not all of those replies were wrong. One of them mentioned “learning to learn”. Programmers are usually bad at learning. Most schools will not teach people how to learn. That’s at best a secondary side-effect that happens on accident with the more motivated students. Primarily, schools teach you how to pass tests.</p>
+<p>So yes, the ranter needs to learn how to learn, but the materials they’re being presented with aren’t helping.</p>
+<p>Also replies like, “it might not be the Haskell texts that is the problem”, are totally unconstructive and play into the “elitist” caricature of functional programmers. I don’t care if you invented Haskell, wrote GHC, wrote 10 books about Haskell, if you can’t be helpful then <em>just don’t say anything</em>. Go get a cappuccino and chill. Learning Haskell is hard, especially for people that aren’t accustomed to thinking in terms of mathematical functions. Which is, incidentally, <em>most programmers</em>. Most programmers are used to learning mostly similar programming languages, swapping out syntaxes as they go. They are not accustomed to a new programming language involving a total reconfiguration of their brain. It’s as much about <em>setting expectations</em> as it is anything else.</p>
+<p>The existing texts for Haskell aren’t using an informed pedagogical discipline. Everyone is winging it. This makes it more painful to learn Haskell than it needs to be. Another problem is the lack of integration and coverage. There’s a ton of materials covering “how do I arithmetic?” through to “what’s a typeclass?” but they rarely go much further than that. We should look to what successful educators in mathematics like V.I. Arnold have tried for ideas on how to fix the situation. We should also be more systematic and empirically informed in how we develop learning materials. Aesthetic fetishization drives most peoples’ tutorial design process, not effective pedagogy. You can see a similar problem with recommendations of works like Mac Lane’s Algebra as an introduction to algebra to people that have almost no mathematical background when it was intended for a totally different audience. This is fetishization without taking your intended audience into account. Consider that Arnold taught group theory to <em>schoolchildren</em>. Schoolchildren can be taught Haskell too.</p>
+<p>Haskell is sufficiently different that we’re teaching people how to learn to program from scratch. The materials should reflect that and be informed by experience teaching Haskell.</p>
+<h1 id="before-i-start-talking-about-specific-courses-and-books">Before I start talking about specific courses and books</h1>
+<p>This is a rundown of what’s worked and not worked about different materials for learning Haskell. If these materials hadn’t existed, I probably wouldn’t be a happy Haskell programmer today. Using Haskell for my 9-5 work and for my side projects has improved my life considerably.</p>
+<p>As a result, I owe our Haskell forebears a great deal for writing all this material. I am critiquing these materials because I think we can do a better job and that doing a better job is <em>important</em> so that other people can have as much fun programming as I do.</p>
+<p>None of the critique is intended to hurt anybody’s feelings. I’ve held off writing a post like this for months because the idea of hurting the feelings any of the people that worked on these materials was shattering to me. I am doing this because:</p>
+<ol style="list-style-type: decimal">
+<li><p>Haskell programmers that are already comfortable with the language seem to live in a bubble WRT learning Haskell</p></li>
+<li><p>I keep having to explain why I recommend <code>BOOK_B</code> but not <code>BOOK_A</code> to people in #haskell-beginners and I’d rather just link them this post.</p></li>
+</ol>
+<p>I’ve taught a lot of people Haskell. This review is based on what has worked for a wide variety of people from people entirely new to programming (like my coauthor Julie) to long-time programmers like myself.</p>
+<p>I gather personal anecdotes on what material has worked for people, but weight them differently depending on a number of variables. If you haven’t taught at least a handful of people Haskell one-on-one, most of the way through the basics and intermediate material, you are going to have some pedagogical blind spots.</p>
+<h2 id="my-educational-priorities">My educational priorities</h2>
+<p>I want people to be able to use Haskell to make programs and to read other peoples’ code. I am not addressing the needs of category theorists or compiler authors.</p>
+<p>I write programs for a living. Haskell makes my work pleasant and enables me to do a better job.</p>
+<p>The way I teach is relatively principled, but it is a principled means to practical ends.</p>
+<h1 id="the-reviews">The reviews</h1>
+<h2 id="cis194-spring-2013">cis194 Spring 2013</h2>
+<p><a href="http://www.seas.upenn.edu/~cis194/spring13/" class="uri">http://www.seas.upenn.edu/~cis194/spring13/</a></p>
+<h3 id="strengths">Strengths</h3>
+<p>Covers the core sticking points that trip most people up: recursion, folds, typeclasses, functor, applicative, monad. The exercises are well-designed and the material is a good progression from one topic to the next.</p>
+<h3 id="weaknesses">Weaknesses</h3>
+<p>No exercises for Functor, which makes the Applicative homework that much harder. If you’re new to recursion, faceplanting into the Hanoi exercise in the first week is often dispiriting.</p>
+<p>The explanations preceeding the exercises are, for obvious reasons, brief as they are designed for a classroom where students can ask questions.</p>
+<p>Doesn’t explain higher kinded types too well. This can make things like <code>Either a</code> more mysterious than they need to be. I’m guessing the creator intended to explain things like this if they came up in the classroom.</p>
+<p>This is fast and it is difficult for many students. You’ll want to fall back to materials with gentler introductions like Thompson’s Craft of Functional Programming or get help from other people if you get stuck.</p>
+<h3 id="do-i-recommend-it">Do I recommend it?</h3>
+<p>Yes! This, along with the NICTA course is the way I teach programmers Haskell. It precedes the NICTA course for reasons explained later.</p>
+<h2 id="nicta-course">NICTA course</h2>
+<p><a href="https://github.com/NICTA/course/" class="uri">https://github.com/NICTA/course/</a></p>
+<h3 id="strengths-1">Strengths</h3>
+<p>The exercises are top-notch and thorough. This is my favorite follow-up to cis194 for teaching people Haskell. Forces people to build on their own code which is really nice.</p>
+<h3 id="weaknesses-1">Weaknesses</h3>
+<p><em>Extremely</em> difficult if you don’t have an on-site instructor as was originally intended for this course or you haven’t done some other course first. This is why this course follows cis194, it’s a gentler introduction. This used to be the only course I recommended until I was convinced to look at cis194 by a thoughtful gentleman from Australia.</p>
+<h3 id="do-i-recommend-it-1">Do I recommend it?</h3>
+<p>Damn skippy. It’s what I tell people to do after cis194 Spring 13.</p>
+<h2 id="learn-you-a-haskell">Learn You a Haskell</h2>
+<p><a href="http://learnyouahaskell.com" class="uri">http://learnyouahaskell.com</a></p>
+<h3 id="strengths-2">Strengths</h3>
+<p>Gets people typing code into the REPL, makes the material less intimidating than most introductions to Haskell. Drawings and style reassure people they’re not being plunged into a professorial abyss that assumes you’re a graduate student in computer science.</p>
+<p>One of the few materials to make a stab at avoiding the “multiple arguments” trap. All Haskell functions take one argument and return one result. Most materials do a poor job of not confusing learners on this matter.</p>
+<h3 id="weaknesses-2">Weaknesses</h3>
+<p>Deeply pedagogically unsound. The monkey-see monkey-do process is a warm-up, not an effective way to learn Haskell. Desperately needs exercises. Very little in the way of cogent explanations for any of the topics that learners struggle with (folding, functor, applicative, monad). This problem is worsened by the lack of exercises.</p>
+<p>Leans way too much on Functor/Applicative/Monad instances that lend themselves to bad intuitions. Does nothing to attempt to alienate these bad intuitions.</p>
+<p>The material often bores learners and leaves them feeling like they’re not “getting” it. This because they’re being “talked at” and demo’d to. They’re not engaging with and solving problems.</p>
+<p>Sense of accomplishment is critical to keeping learners going. They’re not always going to be 100% comfortable with their comprehension of something and they probably never will or should, but they should have a trail of completed exercises in their wake when they start attacking the hard stuff so they don’t give up.</p>
+<p>Exercises also make certain they don’t miss the point. An easy thing to do with a language like Haskell because the semantics are predictable and don’t blow up in your face, even when you don’t understand what’s going on. Most Haskell programmers I know personally have no idea how IO or laziness works, but they’re still able to make working programs. This assertion includes <em>library authors</em>. This is a programming language design success and an educational failure.</p>
+<p>Tricks people into thinking it was designed for people new to programming, but the opposite is true actually. It works for people new to programming as far as “monkey-see monkey-do” works.</p>
+<h3 id="do-i-recommend-it-2">Do I recommend it?</h3>
+<p>No.</p>
+<p>I only recommend it in rare cases with people completely new to programming that need a warm-up to the process of typing code in and seeing it do things. The goal here being to bootstrap people into cis194 (Spring 13). I am strongly considering shifting this recommendation over to the Thompson book instead. (Craft of Functional Programming)</p>
+<p>I am tired of doing clean-up duty on people confused by LYAH as are the other teachers in the IRC channel.</p>
+<h2 id="programming-in-haskell-by-hutton">Programming in Haskell by Hutton</h2>
+<h3 id="strengths-3">Strengths</h3>
+<p>Has exercises. Quite a few in fact.</p>
+<p>Book avoided confusing IO and monads.</p>
+<p>One of the better introductions to parser combinators I’ve seen. I prefer the exercises cis194 uses for parsers, but I like the explanations in PiH better.</p>
+<p>Explains foldr &amp; foldl.</p>
+<h3 id="weaknesses-3">Weaknesses</h3>
+<p>The notation used can confuse people new to Haskell and makes it difficult for them to read the code in the book or translate it to real Haskell. Should’ve stuck with ASCII code that can be typed in literally for the code sections. The earlier exercises are decent, but there’s not much conceptual reinforcement and not enough variety in the exercise design.</p>
+<p>Assumes too much knowledge of math and mathematical notation.</p>
+<p>Explanation of folding isn’t thorough and doesn’t leave people with a strong intuition of what expressions a fold is equivalent to unless they’re familiar with the mathematical notation used to introduce the topic.</p>
+<p>Explanation of IO is technically better than other materials but still wanting. The explanation is evocative of the underlying ST’ish tuple in Haskell implementations like GHC but still not to the point. Lacks explanatory power or justification.</p>
+<p>The point here about “explanatory power” is important. If you deliver your explanation of IO to a programmer and they can’t tell me what adding <code>unsafePerformIO</code> or returning into IO (cf. <code>evaluate</code> in Criterion) will do to a Haskell program, then your explanation has <strong>failed</strong>. You’re better off handwaving IO completely than confusing the learners with faux-explanations. Learners can handle shrugging off “won’t worry about it”, they can’t handle explanations that don’t make sense, don’t explain anything, and don’t relate to anything they already know.</p>
+<p>I’m not asking for <code>unsafeDupableIO</code>, <code>unsafeInterleaveIO</code>, or a deep comprehension of thunk blackholing. Just the basics of what purpose the <code>IO</code> type serves in a lazy programming language.</p>
+<p>Doesn’t cover what really trips people up with Haskell. This is serious. At the time Hutton wrote PiH, things like Applicative weren’t known to us, but it’s already all over the place as a pattern in Haskell because it’s useful. These abstractions are often difficult for new Haskell programmers and must be covered.</p>
+<p>The way PiH delivers exercises is pretty rough. cis194 helps avoid a lot of unnecessary difficulty by providing some code to frame the exercise. The best way to see this contrast is to look at the Applicative parser combinator exercises in cis194 and compare them to the parser exercises in PiH.</p>
+<p>Empty text buffers are a tremendous mental and practical roadblock for beginners and totally avoidable.</p>
+<h3 id="do-i-recommend-it-3">Do I recommend it?</h3>
+<p>Guardedly. I think there are too many more up to date alternatives to provide a strong recommendation here. The best thing about the book is the exercises, but I don’t think that makes it a good choice as a primary resource.</p>
+<h2 id="fp101x">FP101x</h2>
+<h3 id="strengths-4">Strengths</h3>
+<p>There are exercises (homework).</p>
+<h3 id="weaknesses-4">Weaknesses</h3>
+<p>It’s Hutton’s book imported into a MOOC with some videos of a wildly gesticulating programmer.</p>
+<p>The exercises are based on what was in Hutton’s book, but made tedious and easy to get wrong for silly reasons. The final homework is deeper and more satisfying, but learners aren’t properly prepared for it, so they usually get totally blocked until somebody shows them what’s going on.</p>
+<p>Doesn’t include the deeper and more interesting exercises from Hutton’s book.</p>
+<p>Some assertions &amp; explanations in the videos are not merely controversial, but misleading or outright incorrect.</p>
+<h3 id="do-i-recommend-it-4">Do I recommend it?</h3>
+<p>No. If you think the exercises will suit you, work through Hutton’s book.</p>
+<h2 id="typeclassopedia">Typeclassopedia</h2>
+<h3 id="strengths-5">Strengths</h3>
+<p>Goes over the typeclass-reified algebras that are used all over the place in Haskell in a progression that makes sense.</p>
+<h3 id="weaknesses-5">Weaknesses</h3>
+<p>You can’t use the Typeclassopedia unless you’ve been introduced to:</p>
+<p>Functions, values, recursion, the function type constructor (-&gt;), algebraic data types, higher kinded types, typeclasses, some applications of functor/applicative/monad, how type constructor application and type variable scope works, polymorphism, and laws.</p>
+<p>It is not a suitable introduction to the typeclasses outlined within.</p>
+<h3 id="do-i-recommend-it-5">Do I recommend it?</h3>
+<p>I’m going to copy and paste a comment from Reddit that I think explains it well:</p>
+<blockquote>
+<p>For me, the typeclassopedia was quite a useful thing to read, but only after quite a bit of actually hacking about with solving problems in Haskell. It solidified lots of concepts I’d half picked up but its not something you can sit down and read from a cold start.</p>
+</blockquote>
+<p>Recommended as a post-course review, not as an introduction to these typeclasses. You’re better off completing the NICTA course.</p>
+<h2 id="cis194-fall-2014">cis194 Fall 2014</h2>
+<p><a href="http://www.seas.upenn.edu/~cis194/fall14/" class="uri">http://www.seas.upenn.edu/~cis194/fall14/</a></p>
+<h3 id="strengths-6">Strengths</h3>
+<p>Still uses the Spring 2013 format.</p>
+<h3 id="weaknesses-6">Weaknesses</h3>
+<p>Huge gaps in coverage, no longer usable as an introduction to Haskell. Possibly because it’s supposed to be preceded by some other UPenn class? Not sure what happened.</p>
+<p>Doesn’t cover fold, for example.</p>
+<h3 id="do-i-recommend-it-6">Do I recommend it?</h3>
+<p>Absolutely not. Use the Spring 2013 course mentioned above. I probably should’ve talked to the people running the course about these concerns, but their priorities are whatever UPenn students need. It’s not clear to me if cis194 is intended to be a standalone course or not. Rather than harass a poor grad student, I’ve decided to just keep linking the old course and focus on writing a book for learning Haskell.</p>
+<h2 id="beginning-haskell">Beginning Haskell</h2>
+<h3 id="strengths-7">Strengths</h3>
+<p>Projects. Giving the learner something to do that has a real result can help a tonne.</p>
+<h3 id="weaknesses-7">Weaknesses</h3>
+<p>Projects. Broken code. Incorrect types and explanations. Seems like the code examples weren’t tested. Book needs a lot of editing still, not publication-grade and no indications from author or publisher that they will be fixed.</p>
+<p>Projects are pedagogically problematic as an <em>introduction</em>. They force too many thunks at once and force the learner to do far too much cargo-culting when used as an introduction. Cargo-culting in education should be treated like credit card debt. Should only be used to afford a higher leverage explanation of something and then be paid off as quickly as possible.</p>
+<p>It should be noted that analogies and outright lies in teaching are more confusing to learners than cargo-culting.</p>
+<p>Projects are a great idea once fundamentals are in place and they’re focused on exploring a particular concept or library.</p>
+<h3 id="do-i-recommend-it-7">Do I recommend it?</h3>
+<p>Not as an introduction, you need to be able to catch mistakes yourself. Can be a good project-workbook if you need ideas for practical projects or an introduction to the libraries used in the book.</p>
+<p>The book <em>does</em> touch on something which is needed for Haskell, but the implementation is too flawed for me to recommend it to somebody that wants to learn Haskell.</p>
+<h2 id="haskell---the-craft-of-functional-programming">Haskell - The Craft of Functional Programming</h2>
+<h3 id="strengths-8">Strengths</h3>
+<p>Affordances are made for people that have never programmed before and this makes the book more effective for non-programmers and programmers alike.</p>
+<p>Good explanation of functions as they are understood in math rather than allowing the reader to mistake them for <em>procedures</em> as they are used in other programming languages.</p>
+<p>Tells people to use GHCi. This is good.</p>
+<p>The DSL chapter is quite good and covers smart constructors.</p>
+<p>Time and space behavior chapter touches on some nice practicalities.</p>
+<p>Explains the relationship between testing, property testing, and proofs.</p>
+<h3 id="weaknesses-8">Weaknesses</h3>
+<p>Same coverage problems as we see elsewhere - doesn’t go far enough for people to start understanding Haskell code written by Haskellers.</p>
+<p>Throw-away explanation of recursion.</p>
+<p>Time and space behavior is far too short and doesn’t touch on knowledge that is portable and lasting. Bird’s work on laziness and asymptotics in “Introduction to Functional Programming 2ed” is better.</p>
+<h3 id="do-i-recommend-it-8">Do I recommend it?</h3>
+<p>For people new to programming as a bootstrap to cis194.</p>
+<h2 id="introduction-to-functional-programming-using-haskell-2nd-edition">Introduction to Functional Programming using Haskell 2nd Edition</h2>
+<h3 id="strengths-9">Strengths</h3>
+<p>The explanation of laziness is top-notch. One of the only materials to cover guarded recursion properly.</p>
+<p>Relates recursion to induction, something often not seen in other materials.</p>
+<p>Has exercises.</p>
+<h3 id="weaknesses-9">Weaknesses</h3>
+<p>Introduces IO and monads at the same time, which leads to people often not understanding either.</p>
+<p>Exercises are very spare.</p>
+<p>Same coverage problems mentioned elsewhere because the book was written awhile ago.</p>
+<h3 id="note">Note</h3>
+<p>The beginning parts of the parsing chapter in this book and the one in Hutton’s are nearly identical, down to the types and order things are introduced in.</p>
+<h3 id="do-i-recommend-it-9">Do I recommend it?</h3>
+<p>No, not as an introduction to Haskell. Only after you’ve done other books/courses and if you’d like an introduction to laziness, induction, and coinduction.</p>
+<h2 id="thinking-functionally-with-haskell">Thinking Functionally with Haskell</h2>
+<h3 id="strengths-10">Strengths</h3>
+<p>Another Bird book.</p>
+<p>Explains parsers like his last book. Connects them more strongly to monads this time.</p>
+<p>Folds are more clearly demonstrated in terms of equivalent expressions than in other books.</p>
+<p>Explains the numeric typeclasses more thoroughly than the Gentle Introduction, which is nice, but this sort of stuff isn’t really important or a serious roadblock for people learning Haskell.</p>
+<p>Shows you <code>:set +s</code> in GHCi, which is freakin’ sweet.</p>
+<h3 id="weaknesses-10">Weaknesses</h3>
+<p>The foldr/foldl space/time explanation looks like it was copied and pasted out of the Haskell Wiki.</p>
+<p>Still no mention of applicative. Not even in the parsing chapter.</p>
+<p>Damnable IO/monad in the IO section. Same doesnt-explain-anything “IO is like you’re passing in the world as a parameter!” IO explanation you see in Hutton’s book. Makes things worse than what you got with Hutton’s book by confusing IO and Monad.</p>
+<p>Same coverage problems mentioned elsewhere. You still won’t be able to understand most Haskell code written by non-undergrads after reading this book.</p>
+<p>Material is recycled from his “Introduction to Functional Programming using Haskell (Second Edition)”, for an example look at “Evaluation”, section 2.3 in this book, 1.2 in ItFPuH2ed.</p>
+<p><em>Way</em> too much talking at the reader before they do exercises. You can’t chuck an entire chapter of words at somebody and then bookend it with a long list of exercises. It’s confusing, frustrating, boring, and forces a lot of flipping back and forth.</p>
+<p>The exercises for the “Efficiency” (covers laziness, space, time, sorting) chapter aren’t good. There’s no way for the learner to know if they got something right or wrong without looking at the answer. The learner should be able to build confidence in their answers experimentally.</p>
+<p>If their knowledge and experience cannot enable the student to form hypotheses and test those hypotheses, then what are they learning? Math students have the benefit of being able to form a conjecture and attempt to work out a proof.</p>
+<p>We are depriving learners of programming to do something similar empirically or deductively with programs.</p>
+<h3 id="do-i-recommend-it-10">Do I recommend it?</h3>
+<p>No. It has some improvements over Bird’s Introduction to Functional Programming, so you could consider this as an alternative to that, but the difference isn’t compelling and the core problems weren’t addressed.</p>
+<p>This book was published in 2014.</p>
+<h2 id="stanford-cs240h-spring-2014">Stanford CS240h Spring 2014</h2>
+<p><a href="http://www.scs.stanford.edu/14sp-cs240h/" class="uri">http://www.scs.stanford.edu/14sp-cs240h/</a></p>
+<h3 id="strengths-11">Strengths</h3>
+<p>Some of the best explanations and motivations of phantom types, quickcheck, generics, streaming, zippers, and lenses I’ve ever seen. Great patterns for programmers to know so they can harden up their types to more precisely capture and enforce intent.</p>
+<p>Sweet explanations for GHC runtime system stuff by Edward Z. Yang.</p>
+<h3 id="weaknesses-11">Weaknesses</h3>
+<p>This is expressly an intermediate course, so I’m not docking points for not being an introduction. People should just know that it’s more of a finishing course for people wanting to know practicalities and patterns in Haskell programming.</p>
+<p>The course has three labs then a final project. Smaller exercises were included in the slides.</p>
+<p>The first two labs seem quite forgiving, then difficulty skyrockets on the final lab.</p>
+<h3 id="do-i-recommend-it-11">Do I recommend it?</h3>
+<p>Yes, but not as an introduction to <em>Haskell</em>, just as an introduction to post-fundamentals patterns and concepts you’ll want to know like phantom types.</p>
+<h2 id="gentle-introduction-to-haskell">Gentle Introduction to Haskell</h2>
+<p><a href="https://www.haskell.org/tutorial/" class="uri">https://www.haskell.org/tutorial/</a></p>
+<h3 id="strengths-12">Strengths</h3>
+<p>Explains the numeric types and typeclasses a little bit, which isn’t often bothered with. Explains Monads without IO.</p>
+<h3 id="weaknesses-12">Weaknesses</h3>
+<p>More like a respin of the Haskell Report than a way to learn functional programming.</p>
+<p>No exercises. Explanations are brief and unmotivated.</p>
+<p>Dated. Monad explanation isn’t well connected to Functor. I don’t expect an F-A-M progression but they don’t do F-M either. They dive into Monad before things like higher kinded types have been well explained.</p>
+<h3 id="do-i-recommend-it-12">Do I recommend it?</h3>
+<p>No.</p>
+<h2 id="real-world-haskell">Real World Haskell</h2>
+<p><a href="http://book.realworldhaskell.org/" class="uri">http://book.realworldhaskell.org/</a></p>
+<h3 id="strengths-13">Strengths</h3>
+<p>The method O’Sullivan used to motivate monads made me laugh and is pretty good. Demonstrates the <a href="http://www.folklore.org/StoryView.py?story=Make_a_Mess,_Clean_it_Up!.txt">“Make a mess, clean it up!”</a> principle, which programmers would do well to use more.</p>
+<p>One of the only resources to cover monad transformers. Almost definitely the only one to talk about <code>mtl</code>.</p>
+<p>Touches on fmap/liftM/lift which is nice.</p>
+<h3 id="weaknesses-13">Weaknesses</h3>
+<p>Way, way, way too many words covering too little code. This book is <em>exhausting</em> if you engage with it more deeply than skimming.</p>
+<p>Dated. A lot of code no longer works. Author is too busy to fix it. If I got pestered by the Haskell community as much as the author has, I wouldn’t want to fix my book either.</p>
+<p>We still didn’t know what Applicatives were when this book was published.</p>
+<p>Monad transformers chapter is harder to understand than it needs to be.</p>
+<h3 id="do-i-recommend-it-13">Do I recommend it?</h3>
+<p>No, but the monad transformers chapter is worth reading as long as you don’t expect anything to work.</p>
+<h2 id="note-about-the-haskell-wikibook">Note about the Haskell Wikibook</h2>
+<p>I am still reviewing and testing it. I will edit this post when I am comfortable commenting on it.</p>
+<h2 id="recap">Recap</h2>
+<p>How to learn Haskell as laid out <a href="https://github.com/bitemyapp/learnhaskell">in my guide</a> is my recommendation. When I change my mind or discover better material I update the guide.</p>
+<p>It should not be missed that the best way to learn Haskell as an independent learner involves two courses that weren’t even designed with independent learners in mind. I would note that both courses were written by people with a <em>lot of experience teaching</em>.</p>
+<p>Coverage of anything beyond, “what’s a typeclass” is very poor. Mere <em>coverage</em> of basics is good, but the pedagogical quality is extremely lopsided. To get anything close to a reasonable course for learning just the <em>basics</em> of functional programming you’d have to cobble together material from at least 5 different sources.</p>
+<p>We can do a lot better.</p>
+<h3 id="but-how-do-i-learn-haskell">But how do I learn Haskell?</h3>
+<p>For now:</p>
+<p>cis194 -&gt; NICTA course</p>
+<p>Use Craft of Functional Programming if you’re new to programming, need a resource to check for basics, or need a warm-up for cis194.</p>
+<p>Do the Stanford CS240h course after cis194 and the NICTA course if you’re going to use Haskell for work.</p>
+<h2 id="what-im-doing-about-it">What I’m doing about it</h2>
+<p>I’m writing <a href="http://haskellbook.com">a book for learning Haskell</a>. I have brought on <a href="https://superginbaby.wordpress.com/">a coauthor who is a better writer than I am</a> and whose first time <em>ever</em> programming was in Haskell. She also spends a lot of time teaching, more than I do in fact, as she homeschools her children.</p>
+<p>We have complementary backgrounds and strengths that I think are going to help us make a good book for learning Haskell. While I hope the book will be the <em>best</em> way to learn Haskell when it is released, I’d rather it not stay at the top for very long.</p>
+<p>I want people to make better material!</p>
+<h2 id="credits">Credits</h2>
+<p>Thanks to Chris Copeland (<span class="citation">@chrisncopeland</span> on Twitter) for the additional information on CS240h!</p>
+</div>
+
+<div class="blurb">
+  <p>
+      I know this site is a bit of a disaster zone, but if you like my writing or think you could learn something useful from me, please <a href="http://haskellbook.com/">take a look at the Haskell book</a> I've been writing. There's a free sample available too!
+  </p>
+</div>
+
+<div class="footer">
+  <p>
+    Posted on December 31, 2014
+  </p>
+</div>
+]]></summary>
+</entry>
+
+</feed>

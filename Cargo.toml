@@ -1,0 +1,14 @@
+[package]
+name = "shiftrss"
+version = "0.1.0"
+authors = ["Chris Allen <cma@bitemyapp.com>"]
+
+[dependencies]
+env_logger = "0.4.3"
+log = "0.3.8"
+futures = "0.1.14"
+hyper = ">= 0.11"
+hyper-tls = "0.1.1"
+serde = "1.0.9"
+serde_derive = "1.0.9"
+tokio-core = "0.1.8"
