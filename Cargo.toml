@@ -4,11 +4,24 @@ version = "0.1.0"
 authors = ["Chris Allen <cma@bitemyapp.com>"]
 
 [dependencies]
+atom_syndication = "0.5.4"
+clap = "*"
 env_logger = "0.4.3"
 log = "0.3.8"
 futures = "0.1.14"
 hyper = ">= 0.11"
 hyper-tls = "0.1.1"
+# rss = "1.0.0"
+rss = { git = "https://github.com/bitemyapp/rss-1", rev = "01da28530ab0372f88864665a1b355ccc40081da" }
 serde = "1.0.9"
 serde_derive = "1.0.9"
 tokio-core = "0.1.8"
+
+[lib]
+name = "shiftrss"
+path = "src/lib.rs"
+
+[[bin]]
+name = "shiftrss"
+path = "src/main.rs"
+doc = false
