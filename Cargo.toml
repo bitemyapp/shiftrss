@@ -12,6 +12,10 @@ futures = "0.1.14"
 hyper = ">= 0.11"
 hyper-tls = "0.1.1"
 # rss = "1.0.0"
+reqwest = "0.7.3"
+rocket = "0.3.3"
+rocket_codegen = "0.3.3"
+
 rss = { git = "https://github.com/bitemyapp/rss-1", rev = "01da28530ab0372f88864665a1b355ccc40081da" }
 serde = "1.0.9"
 serde_derive = "1.0.9"
@@ -24,4 +28,9 @@ path = "src/lib.rs"
 [[bin]]
 name = "shiftrss"
 path = "src/main.rs"
+doc = false
+
+[[bin]]
+name = "shiftrss-web"
+path = "src/web.rs"
 doc = false

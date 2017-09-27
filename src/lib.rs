@@ -1,17 +1,44 @@
+#![feature(plugin, custom_derive)]
+#![plugin(rocket_codegen)]
+
+extern crate reqwest;
+
+#[macro_use]
+extern crate rocket;
 extern crate rss;
 
 use std::fs::File;
 use std::io::BufReader;
+use std::io::Read;
+
+use rocket::request::*;
+use rocket::http::RawStr;
 use rss::Channel;
 use rss::Item;
 
-pub fn open_rss_file(filename: String, item_filter: ItemFilter) {
+pub fn open_rss_file(filename: &str, item_filter: ItemFilter) {
     let file = File::open(filename).unwrap();
     let mut channel = Channel::read_from(BufReader::new(file)).unwrap();
     filter_feed(&mut channel, item_filter);
     println!("{:?}", channel.items);
 }
+// http://localhost:8000/rss.xml
+pub fn open_rss_uri(uri: &str, item_filter: ItemFilter) -> rss::Channel {
+    let mut resp = reqwest::get(uri).unwrap();
+    assert!(resp.status().is_success());
+    let mut content = String::new();
+    resp.read_to_string(&mut content);
 
+    // let file = File::open(filename).unwrap();
+    let mut channel = Channel::read_from(BufReader::new(content.as_bytes())).unwrap();
+    filter_feed(&mut channel, item_filter);
+    // channel.write_to(::std::io::sink()).unwrap(); // // write to the channel to a writer
+    println!("{:?}", channel);
+    channel
+    // println!("{:?}", channel.items);
+}
+
+#[derive(FromForm)]
 pub struct ItemFilter {
     pub include_exclude: IncludeExclude,
     pub item_field: ItemField,
@@ -24,15 +51,55 @@ pub enum IncludeExclude {
     Include,
 }
 
+impl<'v> FromFormValue<'v> for IncludeExclude {
+    type Error = &'v RawStr;
+
+    fn from_form_value(form_value: &'v RawStr)
+                       -> Result<IncludeExclude, &'v RawStr> {
+        match form_value.as_str() {
+            "Exclude" => Ok(IncludeExclude::Exclude),
+            "Include" => Ok(IncludeExclude::Include),
+            _ => Err(form_value),
+        }
+    }
+}
+
 pub enum ItemField {
     ItemTitle,
     ItemDescription,
     ItemLink,
 }
 
+impl<'v> FromFormValue<'v> for ItemField {
+    type Error = &'v RawStr;
+
+    fn from_form_value(form_value: &'v RawStr)
+                       -> Result<ItemField, &'v RawStr> {
+        match form_value.as_str() {
+            "ItemTitle" => Ok(ItemField::ItemTitle),
+            "ItemDescription" => Ok(ItemField::ItemDescription),
+            "ItemLink" => Ok(ItemField::ItemLink),
+            _ => Err(form_value),
+        }
+    }
+}
+
 pub enum ItemContains {
     ItemDoesNotContain,
     ItemDoesContain,
+}
+
+impl<'v> FromFormValue<'v> for ItemContains {
+    type Error = &'v RawStr;
+
+    fn from_form_value(form_value: &'v RawStr)
+                       -> Result<ItemContains, &'v RawStr> {
+        match form_value.as_str() {
+            "ItemDoesNotContain" => Ok(ItemContains::ItemDoesNotContain),
+            "ItemDoesContain" => Ok(ItemContains::ItemDoesContain),
+            _ => Err(form_value),
+        }
+    }
 }
 
 pub fn filter_feed(mut channel: &mut Channel, item_filter: ItemFilter) -> &mut Channel {
@@ -95,7 +162,7 @@ pub fn it_can_read_an_rss_file() {
         // item_contains: ItemContains::ItemDoesNotContain,
         filter_string: "This article is".to_string(),
     };
-    open_rss_file("tests/data/bitemyapp_rss_small.xml".to_string(), item_filter);
+    open_rss_file("tests/data/bitemyapp_rss_small.xml", item_filter);
     // filter_feed(&mut channel, item_filter);
     // println!("{:?}", channel.items);
 }

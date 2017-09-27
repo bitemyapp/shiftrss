@@ -111,7 +111,7 @@ fn main() {
     let url = matches.value_of("url");
     match (file, url) {
         (None, Some(url)) => unimplemented!(),
-        (Some(filename), None) => open_rss_file(filename.to_string(), item_filter),
+        (Some(filename), None) => open_rss_file(filename, item_filter),
         _ => panic!("At least file or url should be specified!"),
     }
 }

@@ -2,6 +2,9 @@ build:
 	cargo build
 
 run:
+	ROCKET_PORT=8001 RUST_BACKTRACE=1 ./target/debug/shiftrss-web
+
+run-cmd:
 	./target/debug/shiftrss --file tests/data/bitemyapp_rss_small.xml --match Python
 
 build-watch:
