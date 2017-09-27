@@ -2,7 +2,7 @@ build:
 	cargo build
 
 run:
-	./target/debug/shiftrss --file tests/data/bitemyapp_rss_small.xml
+	./target/debug/shiftrss --file tests/data/bitemyapp_rss_small.xml --match Python
 
 build-watch:
 	cargo watch -x build
