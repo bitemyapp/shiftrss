@@ -1,29 +1,38 @@
+package = shiftrss
+
+env = OPENSSL_INCLUDE_DIR="/usr/local/opt/openssl/include"
+cargo = $(env) cargo
+debug-env = RUST_BACKTRACE=1 RUST_LOG=$(package)=debug
+debug-cargo = $(env) $(debug-env) cargo
+
 build:
-	cargo build
+	$(cargo) build
 
-run:
-	ROCKET_PORT=8001 RUST_BACKTRACE=1 ./target/debug/shiftrss-web
+build-release:
+	$(cargo) build --release
 
-run-cmd:
-	./target/debug/shiftrss --file tests/data/bitemyapp_rss_small.xml --match Python
+run: build
+	./target/debug/$(package)
 
-build-watch:
-	cargo watch -x build
-
-build-watch-no-warn:
-	RUSTFLAGS="-A warnings" cargo watch -x build
+install:
+	$(cargo) install
 
 test:
-	cargo test -- --nocapture
+	$(cargo) test
 
 test-debug:
-	RUST_BACKTRACE=1 RUST_LOG=shiftrss=debug cargo test -- --nocapture
-
-test-debug-watch:
-	RUST_BACKTRACE=1 RUST_LOG=shiftrss=debug cargo watch -x test
+	$(debug-cargo) test -- --nocapture
 
 fmt:
-	cargo fmt
+	$(cargo) fmt
 
-rustfix:
-	rustfix
+watch:
+	$(cargo) watch -- cargo build
+
+# You need nightly for rustfmt at the moment
+dev-deps:
+	cargo install fmt
+	cargo install rustfmt-nightly
+
+.PHONY : build build-release run install test test-debug fmt watch dev-deps
+
